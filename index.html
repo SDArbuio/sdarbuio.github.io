@@ -1427,10 +1427,11 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
   ["1965","Semifinal de Copa","Tras eliminar al Ortuella y al Deusto, el Arbuyo cae ante el Bilbao Athletic en Fadura."],
   ["1967","Ascenso a Primera Regional","Promoción ante el Amurrio y el Zorroza. Un 3-0 en casa sentencia el ascenso."],
   ["1969","Trofeo Pachuco Prats","Campeones ante el Barakaldo en Lasesarre, por penaltis.",1],
+  ["1971","Descenso a Segunda","Cuatro años después del ascenso, el Arbuyo baja a Segunda Regional. Se despide de la categoría con dos victorias, ante el Gallarta y en Lujua.",0,"descenso-70-71"],
   ["1971","La cantera en San Mamés","Los infantiles del Arbuyo, con un joven Andoni Goikoetxea, juegan la final del I Trofeo Radio Juventud en San Mamés. Gana el Arenas, 4-0."]
  ];
  const capDe={"1971": "anos-70", "1916": "rica", "1929": "fundacion", "1930": "anos-30", "1932": "anos-30", "1936": "fundacion", "1959": "reaparicion", "1960": "reaparicion", "1965": "anos-60", "1967": "anos-60", "1969": "pachuco-prats"};
- document.getElementById('tl').innerHTML=hitos.map(([y,t,d,b])=>`<li class="${b?'big':''}"><div class="y">${y}</div><div class="dot"></div><div><h3>${t}</h3><p>${d}</p>${capDe[y]?`<a class="more" href="#${capDe[y]}">Leer el capítulo</a>`:''}</div></li>`).join('')+'<li class="mas"><div class="y"></div><div class="dot"></div><div><h3>Continuará…</h3><p>Sigue atento a la web: seguimos investigando y subiendo más historia del Arbuio.</p></div></li>';
+ document.getElementById('tl').innerHTML=hitos.map(([y,t,d,b,c])=>`<li class="${b?'big':''}"><div class="y">${y}</div><div class="dot"></div><div><h3>${t}</h3><p>${d}</p>${(c||capDe[y])?`<a class="more" href="#${c||capDe[y]}">Leer el capítulo</a>`:''}</div></li>`).join('')+'<li class="mas"><div class="y"></div><div class="dot"></div><div><h3>Continuará…</h3><p>Sigue atento a la web: seguimos investigando y subiendo más historia del Arbuio.</p></div></li>';
 
  document.querySelectorAll('.jor').forEach(el=>{
   el.innerHTML=el.dataset.j.split(';').map(j=>{const [n,f,...rs]=j.split('|');return `<div><div class="h"><span>${n}</span><span class="nowrap">${f}</span></div>${rs.map(r=>`<div class="r ${/Arbuyo/.test(r)&&!/Descansa/.test(r)?'ar':''}">${r}</div>`).join('')}</div>`}).join('');
