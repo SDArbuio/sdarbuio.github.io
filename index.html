@@ -536,6 +536,19 @@ body.vc #cromos{flex:1 0 auto;width:100%;background:repeating-linear-gradient(90
 .perfil p{font-size:16px}
 @media(max-width:600px){.perfil{grid-template-columns:minmax(0,1fr)}.perfil figure{max-width:220px;justify-self:center}}
 .desc-sent .foto a,.rcard a,.perfil a{display:block}
+.recortes-par{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:18px;margin:10px 0 26px}
+.recortes-par .foto{margin:0}
+.recortes-par .foto:first-child{max-width:457px}.recortes-par .foto:last-child{max-width:231px}
+.radiografia .rx{display:grid;grid-template-columns:240px minmax(0,1fr);gap:22px;align-items:start}
+.radiografia .rx .foto{margin:0;max-width:none}
+@media(max-width:620px){.radiografia .rx{grid-template-columns:minmax(0,1fr)}.radiografia .rx .foto{max-width:300px;justify-self:center}}
+.nota-s{clear:both}
+details.todos{margin:20px 0 28px;border:1px solid var(--line);border-radius:8px;background:var(--card);padding:0 16px}
+details.todos summary{cursor:pointer;font-weight:700;padding:12px 0;color:var(--green)}
+.res-lista{list-style:none;margin:0 0 8px;padding:0;columns:2;column-gap:28px;font-size:15px}
+.res-lista li{display:grid;grid-template-columns:40px 52px minmax(0,1fr);gap:6px;padding:5px 0;border-bottom:1px dashed var(--line);break-inside:avoid}
+.res-lista .rj{font-weight:700;color:var(--soft)}.res-lista .rf{color:var(--soft)}
+@media(max-width:560px){.res-lista{columns:1}}
 .homenaje{margin:30px 0;padding:22px 24px;border-radius:10px;background:var(--card);border:2px solid var(--green);border-left:10px solid var(--green);clear:both}
 .homenaje h4{margin:0 0 4px;font-size:30px;color:var(--green)}
 .homenaje .hf{margin:0 0 12px;font-size:15px;font-weight:600;color:var(--red);text-align:left}
@@ -731,6 +744,7 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
    <a href="#reaparicion" data-c="reaparicion">La Reaparición</a>
    <a href="#anos-60" data-c="anos-60">Años 60</a>
    <a href="#pachuco-prats" data-c="pachuco-prats">Torneo Pachuco Prats</a>
+   <a href="#temporada-69-70" data-c="temporada-69-70">Temporada 1969-70</a>
    <a href="#descenso-70-71" data-c="descenso-70-71">Descenso 1970-71</a>
    <a href="#anos-70" data-c="anos-70">Años 70</a>
   </div>
@@ -1029,10 +1043,222 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
      <p>El encuentro fue presenciado por 4.000 espectadores, que aplaudieron al presidente del club "merengue" y a Pachuco Prats al empezar y finalizar el encuentro. Arbitró correctamente el señor Urrestarazu, ayudado en las bandas por Tomás y Llantada, tres baracaldeses que estuvieron muy acertados en todo momento.</p></div></article>
    <figure class="foto peq"><img src="fotos/pp-entrega-cuadro.jpg" alt="Tres hombres sostienen un cuadro con la foto de un equipo de fútbol" width="500" height="537" loading="lazy"><figcaption>El presidente del Arbuyo recibe, de manos de don Santiago Bernabéu, y en presencia del presidente del Baracaldo, señor Echevarría Lastra, un cuadro del Real Madrid dedicado a la S.D. Arbuyo.</figcaption></figure>
   </article>
+  <article class="cap" id="temporada-69-70">
+   <h3 class="ct">1969-70: firmes en Primera Regional</h3>
+   <p class="cs">Primera Categoría Regional · temporada 1969-70 · entrenador: José Quintana · presidente: José Blanco Prieto</p>
+   <p>Después de la gran temporada 1968-69 y del Trofeo Pachuco Prats, el Arbuyo jugó la temporada 1969-70 en una Primera Categoría Regional de 16 equipos y 30 jornadas. Entre los rivales estaban el Zorroza, el Begoña y el vecino Larramendi, que jugaba sus partidos en el mismo campo de Arbuyo. En el banquillo se sentaba José Quintana, que acababa de sacar el título de entrenador.</p>
+   <p>No fue un año de grandes alegrías, pero tampoco de apuros: el equipo pasó casi toda la liga en mitad de la tabla y terminó undécimo, con la categoría asegurada. Las crónicas del diario Hierro nos permiten seguirlo semana a semana.</p>
+
+   <h4>Un arranque irregular</h4>
+   <p>La liga empezó con dos derrotas, ante la Peña y en el campo del Apurtuarte, pero el equipo reaccionó con un 5-0 al Amaika. En octubre llegaron dos victorias seguidas, en Elorrio (2-3) y en casa ante el Ermua, que subieron al Arbuyo hasta la séptima plaza, su mejor puesto del año.</p>
+   <article class="cronica" aria-label="Crónica del partido Arbuyo 3 - Ermua 2">
+    <div class="eh"><span class="et">La remontada</span><span class="eg">Primera Regional · 6.ª jornada · 19 oct. 1969 · En Arbuyo</span></div>
+    <div class="mt sinl"><span class="lo"><span class="a">Arbuyo</span></span><span class="sc G">3<i>-</i>2</span><span class="vi"><span>Ermua</span></span></div>
+    <div class="cb">
+     <p class="gol"><b>Goles del Arbuyo:</b> Luis (57'), Carlos (70') y Arri (en los últimos minutos).</p>
+     <ul class="xi al"><li><b>Arbuyo:</b> Trujillo; Lemus, Márquez, Pradera; Amézaga, Salva; Arri, Luis, Cuesta, Sarria y Carlos.</li></ul>
+     <p>El Ermua, uno de los fuertes de la liga, marcó en la primera parte y volvió a hacerlo nada más empezar la segunda, en un córner. Con 0-2, el Arbuyo se fue arriba y le dio la vuelta en media hora: Luis recortó, Carlos empató y Arri hizo el tercero cuando ya se acababa el partido. Para el periódico, la clave fue la mejor preparación física de los de casa.</p>
+     <p class="src">Fuente: diario Hierro, 22 de octubre de 1969.</p>
+    </div>
+   </article>
+   <figure class="foto" style="max-width:540px"><a href="fotos/hierro-1969-10-22-ermua.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1969-10-22-ermua.jpg" alt="Crónica del diario Hierro del partido Arbuyo 3 - Ermua 2" width="937" height="410" loading="lazy"></a><figcaption>Hierro, 22 de octubre de 1969.</figcaption></figure>
+   <p>Después llegó una racha más gris, con derrotas ante el Moraza y el Begoña y un empate en Gobela ante el Romo. En noviembre el equipo ganó 4-2 al San Pedro y empató en Gallarta, pero el invierno se le atragantó y cerró la primera vuelta en el puesto 11.</p>
+   <div class="rec-grid">
+    <article class="rcard">
+     <div class="rh"><span>14 sep. 1969 · J1</span><span>En Arbuyo</span></div>
+     <div class="rm"><span><span class="a">Arbuyo</span></span><span class="sc P">1<i>-</i>3</span><span>Peña</span></div>
+     <p>Estreno con derrota. La Peña se puso 0-2 en la primera parte; Arri recortó tras el descanso, pero Larreina, con su segundo gol, cerró el partido. Según la crónica, todos pusieron mucho empeño, pero faltó suerte.</p>
+     <figure><a href="fotos/hierro-1969-09-17-pena.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1969-09-17-pena.jpg" alt="Crónica del diario Hierro del partido Arbuyo 1 - Peña 3" width="466" height="266" loading="lazy"></a><figcaption>Hierro, 17 de septiembre de 1969.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>21 sep. 1969 · J2</span><span>Fuera</span></div>
+     <div class="rm"><span>Apurtuarte</span><span class="sc P">1<i>-</i>0</span><span><span class="a">Arbuyo</span></span></div>
+     <p>En un campo en malas condiciones, el Apurtuarte puso más ganas y ganó con un gol de cabeza de Bilbao poco antes del descanso.</p>
+     <figure><a href="fotos/hierro-1969-09-24-apurtuarte.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1969-09-24-apurtuarte.jpg" alt="Crónica del diario Hierro del partido Apurtuarte 1 - Arbuyo 0" width="462" height="242" loading="lazy"></a><figcaption>Hierro, 24 de septiembre de 1969.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>28 sep. 1969 · J3</span><span>En Arbuyo</span></div>
+     <div class="rm"><span><span class="a">Arbuyo</span></span><span class="sc G">5<i>-</i>0</span><span>Amaika</span></div>
+     <p>Primera victoria, y a lo grande. Tras un primer tiempo sin goles, el Arbuyo arrolló en la segunda parte: Arri, Cuesta dos veces, Carlos y Sarria.</p>
+     <figure><a href="fotos/hierro-1969-10-01-amaika.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1969-10-01-amaika.jpg" alt="Crónica del diario Hierro del partido Arbuyo 5 - Amaika 0" width="442" height="192" loading="lazy"></a><figcaption>Hierro, 1 de octubre de 1969.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>5 oct. 1969 · J4</span><span>Fuera</span></div>
+     <div class="rm"><span>Lujua</span><span class="sc P">3<i>-</i>1</span><span><span class="a">Arbuyo</span></span></div>
+     <p>El Lujua luchó de principio a fin y se puso 2-0 pronto. Aurelio recortó antes del descanso, pero en la segunda parte llegó el tercero y Salva fue expulsado.</p>
+     <figure><a href="fotos/hierro-1969-10-08-lujua.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1969-10-08-lujua.jpg" alt="Crónica del diario Hierro del partido Lujua 3 - Arbuyo 1" width="460" height="200" loading="lazy"></a><figcaption>Hierro, 8 de octubre de 1969.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>26 oct. 1969 · J7</span><span>Fuera</span></div>
+     <div class="rm"><span>Moraza</span><span class="sc P">3<i>-</i>0</span><span><span class="a">Arbuyo</span></span></div>
+     <p>Partido muy correcto en el campo del Moraza, que marcó de penalti en la primera parte y sentenció en la segunda. Del Arbuyo destacaron Tajada y el portero Trujillo.</p>
+     <figure><a href="fotos/hierro-1969-10-29-moraza.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1969-10-29-moraza.jpg" alt="Crónica del diario Hierro del partido Moraza 3 - Arbuyo 0" width="455" height="237" loading="lazy"></a><figcaption>Hierro, 29 de octubre de 1969.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>2 nov. 1969 · J8</span><span>En Arbuyo</span></div>
+     <div class="rm"><span><span class="a">Arbuyo</span></span><span class="sc P">2<i>-</i>4</span><span>Begoña</span></div>
+     <p>Partido rápido y vistoso. Al descanso se llegó con 2-2, con gol de Cuesta, pero en la segunda parte mandó el Begoña, que acabaría segundo. Alonso marcó tres.</p>
+     <figure><a href="fotos/hierro-1969-11-05-begona.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1969-11-05-begona.jpg" alt="Crónica del diario Hierro del partido Arbuyo 2 - Begoña 4" width="477" height="318" loading="lazy"></a><figcaption>Hierro, 5 de noviembre de 1969.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>8 nov. 1969 · J9</span><span>Fuera</span></div>
+     <div class="rm"><span>Romo</span><span class="sc E">0<i>-</i>0</span><span><span class="a">Arbuyo</span></span></div>
+     <p>Partido jugado en sábado en Gobela, con poco público y mucha corrección. La ocasión más clara fue un penalti a favor del Romo que Abad tiró fuera.</p>
+     <figure><a href="fotos/hierro-1969-11-12-romo.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1969-11-12-romo.jpg" alt="Crónica del diario Hierro del partido Romo 0 - Arbuyo 0" width="466" height="233" loading="lazy"></a><figcaption>Hierro, 12 de noviembre de 1969.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>7 dic. 1969 · J13</span><span>Fuera</span></div>
+     <div class="rm"><span>Zorroza</span><span class="sc P">2<i>-</i>0</span><span><span class="a">Arbuyo</span></span></div>
+     <p>El futuro campeón se impuso por velocidad y empuje, pero no pudo con Trujillo hasta la segunda parte. Según la crónica, el Arbuyo tuvo mejor técnica.</p>
+     <figure><a href="fotos/hierro-1969-12-10-zorroza.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1969-12-10-zorroza.jpg" alt="Crónica del diario Hierro del partido Zorroza 2 - Arbuyo 0" width="467" height="225" loading="lazy"></a><figcaption>Hierro, 10 de diciembre de 1969.</figcaption></figure>
+    </article>
+   </div>
+
+   <h4>El derbi de Alonsotegi</h4>
+   <p>El partido más esperado de la primera vuelta fue el Arbuyo-Larramendi del 30 de noviembre. Los dos equipos de Alonsotegi compartían campo, así que el derbi se jugaba siempre en casa.</p>
+   <article class="cronica" aria-label="Crónica del partido Arbuyo 0 - Larramendi 0">
+    <div class="eh"><span class="et">El derbi</span><span class="eg">Primera Regional · 12.ª jornada · 30 nov. 1969 · En Arbuyo</span></div>
+    <div class="mt sinl"><span class="lo"><span class="a">Arbuyo</span></span><span class="sc E">0<i>-</i>0</span><span class="vi"><span>Larramendi</span></span></div>
+    <div class="cb">
+     <ul class="xi al"><li><b>Arbuyo:</b> Joserra; Lubián, Márquez, Pradera; Amézaga, Salva; Luis, Arri, Cuesta, Sarria y Jiménez.</li><li><b>Larramendi:</b> Serna; Imatz, Charroalde, Bilbao; Galíndez, Garay; Aldama, Junquera, Lámbarri, Garay y Fernández.</li></ul>
+     <p>Fue un partido de muchos nervios, como correspondía a la rivalidad entre los dos equipos. A los trece minutos, Salva entró a Lámbarri en la disputa de un balón, el delantero del Larramendi intentó agredirle y el árbitro expulsó a los dos. Con diez contra diez, el Arbuyo tuvo una fase de dominio, pero el Larramendi también llegó con peligro. El empate a cero fue justo.</p>
+     <p>La Federación castigó después a Salva y a Lámbarri con cinco partidos de suspensión cada uno.</p>
+     <p class="src">Fuente: diario Hierro, 3 y 10 de diciembre de 1969.</p>
+    </div>
+   </article>
+   <div class="recortes-par">
+    <figure class="foto"><a href="fotos/hierro-1969-12-03-larramendi.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1969-12-03-larramendi.jpg" alt="Crónica del diario Hierro del partido Arbuyo 0 - Larramendi 0" width="457" height="172" loading="lazy"></a><figcaption>Hierro, 3 de diciembre de 1969.</figcaption></figure>
+    <figure class="foto"><a href="fotos/hierro-1969-12-10-sanciones-derbi.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1969-12-10-sanciones-derbi.jpg" alt="Sanciones de la Federación a Salva, del Arbuyo, y a Lámbarri, del Larramendi" width="231" height="333" loading="lazy"></a><figcaption>Las sanciones del derbi (Hierro, 10 de diciembre de 1969).</figcaption></figure>
+   </div>
+   <p>La revancha llegó en primavera, en el campo del Larramendi, que acabaría tercero y subiendo de categoría: el Arbuyo ganó 0-1. No hemos encontrado la crónica de ese partido; el resultado sale de las cuentas de la clasificación, que solo cuadran con esa victoria.</p>
+
+   <div class="homenaje radiografia">
+    <h4>Radiografía del Arbuyo</h4>
+    <p class="hf">Diario Hierro · 21 de enero de 1970 · texto de A. Roca, fotos de Jaime</p>
+    <div class="rx">
+     <figure class="foto"><a href="fotos/hierro-1970-01-21-radiografia.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-01-21-radiografia.jpg" alt="Reportaje del diario Hierro titulado Radiografía del Arbuyo, con una foto del equipo" width="488" height="860" loading="lazy"></a><figcaption>«Equipo del Arbuyo» (Hierro, 21 de enero de 1970).</figcaption></figure>
+     <div>
+      <p>A mitad de temporada, el Hierro dedicó al Arbuyo su sección de presentación de los clubes modestos de Bizkaia, con una foto del equipo. El reportaje es un retrato precioso de lo que era el club entonces.</p>
+      <p>El Arbuyo tenía unos 300 socios. Eran pocos, pero la afición se volcaba con el club: ayudaba con rifas y cupones, y muchos socios pagaban su entrada cuando iban a ver los partidos. Los jugadores no cobraban ficha; solo recibían una prima bastante modesta.</p>
+      <p>Presidía el club José Blanco Prieto, que llevaba ya varias temporadas en el cargo, al frente de una junta directiva de 16 personas. El entrenador era José Quintana.</p>
+      <p><b>La plantilla:</b> Trujillo y Joserra, porteros; Lubián, Márquez, Lemus y Pradera, defensas; Salva, Román, Lara, Peña y Ariño, medios; y Javi, Aurelio, Cuesta, Luis, Sarria, Marcos, Carlos, Arri y Jiménez, delanteros.</p>
+     </div>
+    </div>
+   </div>
+
+   <h4>Los goles de Luis</h4>
+   <p>Si el Arbuyo de aquel año tuvo un goleador, ese fue Luis. Solo en los partidos de los que conservamos la crónica marcó al menos nueve goles, entre ellos cuatro en una tarde ante el Apurtuarte y tres ante el Romo.</p>
+   <article class="cronica" aria-label="Crónica del partido Arbuyo 6 - Apurtuarte 2">
+    <div class="eh"><span class="et">Cuatro goles de Luis</span><span class="eg">Primera Regional · 17.ª jornada · 4 ene. 1970 · En Arbuyo</span></div>
+    <div class="mt sinl"><span class="lo"><span class="a">Arbuyo</span></span><span class="sc G">6<i>-</i>2</span><span class="vi"><span>Apurtuarte</span></span></div>
+    <div class="cb">
+     <p class="gol"><b>Goles del Arbuyo:</b> Luis (4), Marcos y Sarria.</p>
+     <ul class="xi al"><li><b>Arbuyo:</b> Joserra; Lubián, Márquez, Pradera; Arri, Ariño; Javi, Aurelio, Luis, Sarria y Marcos.</li></ul>
+     <p>Aunque el campo tenía agua en algunas zonas, se pudo jugar bien. El Arbuyo presionó desde el principio y se fue al descanso ganando 2-0, con dos goles de Luis. En la segunda parte el dominio fue todavía mayor: Luis marcó otros dos, y Marcos y Sarria completaron la goleada. Sustacha y Ayo hicieron los del Apurtuarte.</p>
+     <p>El periódico destacó por encima de todos a Luis, aunque todo el equipo jugó con mucho entusiasmo. Arbitró De Burgos.</p>
+     <p class="src">Fuente: diario Hierro, 7 de enero de 1970.</p>
+    </div>
+   </article>
+   <figure class="foto" style="max-width:455px"><a href="fotos/hierro-1970-01-07-apurtuarte.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-01-07-apurtuarte.jpg" alt="Crónica del diario Hierro del partido Arbuyo 6 - Apurtuarte 2, con una foto del equipo del Larramendi" width="455" height="607" loading="lazy"></a><figcaption>La crónica del 6-2. La foto que la acompaña es del Larramendi, el vecino que compartía campo con el Arbuyo (Hierro, 7 de enero de 1970).</figcaption></figure>
+
+   <h4>Segunda vuelta</h4>
+   <p>El invierno fue duro, con derrotas en Amaika y Ermua y un 0-3 en casa ante el Moraza. Pero entre finales de febrero y marzo llegó la mejor racha del año: 1-1 en el campo del Begoña, 3-2 al Romo, 1-3 en San Pedro y 2-0 al Gallarta, sin perder en cuatro partidos.</p>
+   <div class="rec-grid">
+    <article class="rcard">
+     <div class="rh"><span>11 ene. 1970 · J18</span><span>Fuera</span></div>
+     <div class="rm"><span>Amaika</span><span class="sc P">2<i>-</i>0</span><span><span class="a">Arbuyo</span></span></div>
+     <p>El Amaika ganó con dos goles de Rodri en la segunda parte, uno de penalti. Aun así, la crónica dice que el Arbuyo dejó la impresión de ser un equipo fuerte y con jugadores de clase.</p>
+     <figure><a href="fotos/hierro-1970-01-14-amaika.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-01-14-amaika.jpg" alt="Crónica del diario Hierro del partido Amaika 2 - Arbuyo 0" width="460" height="248" loading="lazy"></a><figcaption>Hierro, 14 de enero de 1970.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>15 feb. 1970 · J22</span><span>En Arbuyo</span></div>
+     <div class="rm"><span><span class="a">Arbuyo</span></span><span class="sc P">0<i>-</i>3</span><span>Moraza</span></div>
+     <p>Primera parte igualada y sin goles; en la segunda, la mejor forma física del Moraza se notó y llegaron tres goles en media hora.</p>
+     <figure><a href="fotos/hierro-1970-02-18-moraza.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-02-18-moraza.jpg" alt="Crónica del diario Hierro del partido Arbuyo 0 - Moraza 3" width="667" height="396" loading="lazy"></a><figcaption>Hierro, 18 de febrero de 1970.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>8 mar. 1970 · J24</span><span>En Arbuyo</span></div>
+     <div class="rm"><span><span class="a">Arbuyo</span></span><span class="sc G">3<i>-</i>2</span><span>Romo</span></div>
+     <p>Partido abierto y vistoso. El Romo se adelantó dos veces y las dos respondió Luis, autor de los tres goles del Arbuyo. Los mejores: Luis, Aurelio y la línea de medios.</p>
+     <figure><a href="fotos/hierro-1970-03-11-romo.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-03-11-romo.jpg" alt="Crónica del diario Hierro del partido Arbuyo 3 - Romo 2" width="453" height="235" loading="lazy"></a><figcaption>Hierro, 11 de marzo de 1970.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>15 mar. 1970 · J25</span><span>Fuera</span></div>
+     <div class="rm"><span>San Pedro</span><span class="sc G">1<i>-</i>3</span><span><span class="a">Arbuyo</span></span></div>
+     <p>Victoria de mérito en el campo del San Pedro. El Hierro solo publicó el resultado.</p>
+     <figure><a href="fotos/hierro-1970-03-16-resultados.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-03-16-resultados.jpg" alt="Resultados de Primera Regional en el diario Hierro, con San Pedro 1 - Arbuyo 3" width="307" height="168" loading="lazy"></a><figcaption>Hierro, 16 de marzo de 1970.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>22 mar. 1970 · J26</span><span>En Arbuyo</span></div>
+     <div class="rm"><span><span class="a">Arbuyo</span></span><span class="sc G">2<i>-</i>0</span><span>Gallarta</span></div>
+     <p>El Gallarta aguantó una parte, pero el Arbuyo se impuso con goles de Cuesta y Amézaga. Pudo ser más: Sarria falló un penalti. Destacaron Luis, Cuesta y Trujillo.</p>
+     <figure><a href="fotos/hierro-1970-03-25-gallarta.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-03-25-gallarta.jpg" alt="Crónica del diario Hierro del partido Arbuyo 2 - Gallarta 0" width="472" height="227" loading="lazy"></a><figcaption>Hierro, 25 de marzo de 1970.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>5 abr. 1970 · J28</span><span>En Arbuyo</span></div>
+     <div class="rm"><span><span class="a">Arbuyo</span></span><span class="sc P">2<i>-</i>3</span><span>Zorroza</span></div>
+     <p>Ante el líder, el Arbuyo se puso 2-0 al contraataque con goles de Luis y Cuesta. El Zorroza recortó antes del descanso y le dio la vuelta en la segunda parte.</p>
+     <figure><a href="fotos/hierro-1970-04-08-zorroza.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-04-08-zorroza.jpg" alt="Crónica del diario Hierro del partido Arbuyo 2 - Zorroza 3" width="462" height="242" loading="lazy"></a><figcaption>Hierro, 8 de abril de 1970.</figcaption></figure>
+    </article>
+   </div>
+
+   <p>El final de la liga fue más flojo: después del 2-3 ante el líder llegaron una derrota en Gernika (2-0) y otra en casa ante el Santuchu en la última jornada. Para entonces, la permanencia ya estaba asegurada.</p>
+   <div class="rec-grid uno">
+    <article class="rcard">
+     <div class="rh"><span>19 abr. 1970 · J30</span><span>En Arbuyo</span></div>
+     <div class="rm"><span><span class="a">Arbuyo</span></span><span class="sc P">1<i>-</i>2</span><span>Santuchu</span></div>
+     <p>Último partido. El Santuchu, ya clasificado para la promoción de ascenso, se adelantó pronto; Sarria empató con un tiro cruzado, pero los visitantes ganaron a diez minutos del final.</p>
+     <figure><a href="fotos/hierro-1970-04-22-santuchu.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-04-22-santuchu.jpg" alt="Crónica del diario Hierro del partido Arbuyo 1 - Santuchu 2" width="468" height="197" loading="lazy"></a><figcaption>Hierro, 22 de abril de 1970.</figcaption></figure>
+    </article>
+   </div>
+
+   <p class="nota-s"><b>Sarria ya estaba ahí.</b> El jugador que la temporada siguiente sería el hombre del Arbuyo, Pedro María Sarria Astarloa, aparece en las 17 alineaciones del Arbuyo que publicó el Hierro aquel año. Su nombre completo lo conocemos gracias a una amonestación de la Federación, tras el partido en el campo del Apurtuarte.</p>
+   <figure class="foto" style="max-width:223px"><img src="fotos/hierro-1969-10-01-sancion-sarria.jpg" alt="Nota de la Federación en el diario Hierro con la amonestación a Pedro María Sarria Astarloa, del Arbuyo" width="223" height="227" loading="lazy"><figcaption>Hierro, 1 de octubre de 1969.</figcaption></figure>
+
+   <h4>Clasificación final</h4>
+   <div class="scroll clas30"><table class="tabla">
+    <caption>Así quedó la Primera Categoría Regional 1969-70 (la victoria valía 2 puntos). <span class="pos as">1</span>–<span class="pos as">3</span> subieron a Regional Preferente · <span class="pos pr">4</span> jugó la promoción de ascenso. El orden de la Peña y el Gernika es el que corrigió el Hierro dos días después, por los partidos entre ellos.</caption>
+    <thead><tr><th>#</th><th class="eq">Equipo</th><th>PJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>Pts</th></tr></thead>
+    <tbody>
+     <tr><td><span class="pos as">1</span></td><td class="eq">Zorroza</td><td>30</td><td>21</td><td>6</td><td>3</td><td>63</td><td>22</td><td class="pt">48</td></tr>
+     <tr><td><span class="pos as">2</span></td><td class="eq">Begoña</td><td>30</td><td>20</td><td>6</td><td>4</td><td>76</td><td>37</td><td class="pt">46</td></tr>
+     <tr><td><span class="pos as">3</span></td><td class="eq">Larramendi</td><td>30</td><td>17</td><td>10</td><td>3</td><td>69</td><td>28</td><td class="pt">44</td></tr>
+     <tr><td><span class="pos pr">4</span></td><td class="eq">Santutxu</td><td>30</td><td>16</td><td>7</td><td>7</td><td>61</td><td>43</td><td class="pt">39</td></tr>
+     <tr><td><span class="pos ">5</span></td><td class="eq">Ermua</td><td>30</td><td>12</td><td>10</td><td>8</td><td>72</td><td>50</td><td class="pt">34</td></tr>
+     <tr><td><span class="pos ">6</span></td><td class="eq">Gallarta</td><td>30</td><td>11</td><td>10</td><td>9</td><td>45</td><td>42</td><td class="pt">32</td></tr>
+     <tr><td><span class="pos ">7</span></td><td class="eq">Peña</td><td>30</td><td>12</td><td>8</td><td>10</td><td>42</td><td>34</td><td class="pt">32</td></tr>
+     <tr><td><span class="pos ">8</span></td><td class="eq">Gernika</td><td>30</td><td>11</td><td>10</td><td>9</td><td>42</td><td>39</td><td class="pt">32</td></tr>
+     <tr><td><span class="pos ">9</span></td><td class="eq">San Pedro</td><td>30</td><td>12</td><td>7</td><td>11</td><td>58</td><td>53</td><td class="pt">31</td></tr>
+     <tr><td><span class="pos ">10</span></td><td class="eq">Moraza</td><td>30</td><td>11</td><td>8</td><td>11</td><td>48</td><td>44</td><td class="pt">30</td></tr>
+     <tr class="yo"><td><span class="pos ">11</span></td><td class="eq">Arbuyo</td><td>30</td><td>10</td><td>6</td><td>14</td><td>46</td><td>54</td><td class="pt">26</td></tr>
+     <tr><td><span class="pos ">12</span></td><td class="eq">Amaika</td><td>30</td><td>8</td><td>5</td><td>17</td><td>37</td><td>71</td><td class="pt">21</td></tr>
+     <tr><td><span class="pos ">13</span></td><td class="eq">Lujua</td><td>30</td><td>8</td><td>4</td><td>18</td><td>37</td><td>66</td><td class="pt">20</td></tr>
+     <tr><td><span class="pos ">14</span></td><td class="eq">Romo</td><td>30</td><td>6</td><td>6</td><td>18</td><td>41</td><td>65</td><td class="pt">18</td></tr>
+     <tr><td><span class="pos ">15</span></td><td class="eq">Elorrio</td><td>30</td><td>5</td><td>5</td><td>20</td><td>49</td><td>93</td><td class="pt">15</td></tr>
+     <tr><td><span class="pos ">16</span></td><td class="eq">Apurtuarte</td><td>30</td><td>5</td><td>2</td><td>23</td><td>33</td><td>78</td><td class="pt">12</td></tr>
+    </tbody>
+   </table></div>
+   <figure class="foto" style="max-width:337px"><img src="fotos/hierro-1970-04-20-clasificacion.jpg" alt="Clasificación final de Primera Regional 1969-70 en el diario Hierro" width="337" height="250" loading="lazy"><figcaption>Clasificación final (Hierro, 20 de abril de 1970).</figcaption></figure>
+   <details class="todos">
+    <summary>Ver los 30 resultados del Arbuyo</summary>
+    <ol class="res-lista"><li><span class="rj">J1</span><span class="rf">14/09</span><span>Arbuyo 1-3 Peña</span></li><li><span class="rj">J2</span><span class="rf">21/09</span><span>Apurtuarte 1-0 Arbuyo</span></li><li><span class="rj">J3</span><span class="rf">28/09</span><span>Arbuyo 5-0 Amaika</span></li><li><span class="rj">J4</span><span class="rf">05/10</span><span>Lujua 3-1 Arbuyo</span></li><li><span class="rj">J5</span><span class="rf">12/10</span><span>Elorrio 2-3 Arbuyo</span></li><li><span class="rj">J6</span><span class="rf">19/10</span><span>Arbuyo 3-2 Ermua</span></li><li><span class="rj">J7</span><span class="rf">26/10</span><span>Moraza 3-0 Arbuyo</span></li><li><span class="rj">J8</span><span class="rf">02/11</span><span>Arbuyo 2-4 Begoña</span></li><li><span class="rj">J9</span><span class="rf">08/11</span><span>Romo 0-0 Arbuyo</span></li><li><span class="rj">J10</span><span class="rf">16/11</span><span>Arbuyo 4-2 San Pedro</span></li><li><span class="rj">J11</span><span class="rf">23/11</span><span>Gallarta 1-1 Arbuyo</span></li><li><span class="rj">J12</span><span class="rf">30/11</span><span>Arbuyo 0-0 Larramendi</span></li><li><span class="rj">J13</span><span class="rf">07/12</span><span>Zorroza 2-0 Arbuyo</span></li><li><span class="rj">J14</span><span class="rf">14/12</span><span>Arbuyo 0-0 Gernika</span></li><li><span class="rj">J15</span><span class="rf">21/12</span><span>Santuchu 4-2 Arbuyo</span></li><li><span class="rj">J16</span><span class="rf">28/12</span><span>Peña 1-0 Arbuyo</span></li><li><span class="rj">J17</span><span class="rf">04/01</span><span>Arbuyo 6-2 Apurtuarte</span></li><li><span class="rj">J18</span><span class="rf">11/01</span><span>Amaika 2-0 Arbuyo</span></li><li><span class="rj">J19</span><span class="rf">18/01</span><span>Arbuyo 2-1 Lujua</span></li><li><span class="rj">J20</span><span class="rf">25/01</span><span>Arbuyo 3-3 Elorrio</span></li><li><span class="rj">J21</span><span class="rf">01/02</span><span>Ermua 4-0 Arbuyo</span></li><li><span class="rj">J22</span><span class="rf">15/02</span><span>Arbuyo 0-3 Moraza</span></li><li><span class="rj">J23</span><span class="rf">—</span><span>Begoña 1-1 Arbuyo *</span></li><li><span class="rj">J24</span><span class="rf">08/03</span><span>Arbuyo 3-2 Romo</span></li><li><span class="rj">J25</span><span class="rf">15/03</span><span>San Pedro 1-3 Arbuyo</span></li><li><span class="rj">J26</span><span class="rf">22/03</span><span>Arbuyo 2-0 Gallarta</span></li><li><span class="rj">J27</span><span class="rf">—</span><span>Larramendi 0-1 Arbuyo *</span></li><li><span class="rj">J28</span><span class="rf">05/04</span><span>Arbuyo 2-3 Zorroza</span></li><li><span class="rj">J29</span><span class="rf">12/04</span><span>Gernika 2-0 Arbuyo</span></li><li><span class="rj">J30</span><span class="rf">19/04</span><span>Arbuyo 1-2 Santuchu</span></li></ol>
+    <p class="src">* Estos dos resultados no los hemos encontrado en el periódico: salen de las clasificaciones, que solo cuadran con ellos.</p>
+   </details>
+
+   <h4>Lo que venía después</h4>
+   <div class="desc-sent">
+    <div>
+     <p>En marzo de 1970 el Hierro contaba que muchos clubes vizcaínos iban a pedir que Preferente y Primera Regional pasaran a tener 20 equipos, por la reestructuración de la Tercera División. Así fue: la temporada siguiente, el Arbuyo jugó una liga de 20 equipos y 38 jornadas, que acabaría en descenso.</p>
+    </div>
+    <figure class="foto" style="max-width:220px"><a href="fotos/hierro-1970-03-25-ampliacion.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-03-25-ampliacion.jpg" alt="Artículo del diario Hierro: ¿Serán ampliadas a 20 clubs la próxima temporada la Categoría Preferente y la Primera Regional?" width="332" height="653" loading="lazy"></a><figcaption>Hierro, 25 de marzo de 1970.</figcaption></figure>
+   </div>
+   <p class="src">Fuentes: diario Hierro: crónicas, resultados y clasificaciones de los miércoles de la temporada 1969-70 (17 y 24 de septiembre; 1, 8, 15, 22 y 29 de octubre; 5, 12, 19 y 26 de noviembre; 3, 10, 17, 24 y 31 de diciembre de 1969; 7, 14, 21 y 28 de enero; 4 y 18 de febrero; 11 y 25 de marzo; 8 y 22 de abril de 1970) y de los lunes 16 de marzo, 13 y 20 de abril de 1970.</p>
+  </article>
+
   <article class="cap" id="descenso-70-71">
    <h3 class="ct">1970-71: el descenso a Segunda</h3>
    <p class="cs">Primera Categoría Regional · temporada 1970-71 · entrenador: Artabe (hasta enero)</p>
-   <p>Después del ascenso de 1967 y de la gran temporada 1968-69, el Arbuyo afrontó la temporada 1970-71 en Primera Categoría Regional, una liga larga de 20 equipos y 38 jornadas. La empezó con Artabe en el banquillo, que antes había entrenado a los juveniles del Barakaldo. Fue un año muy duro, de los que también forman parte de la historia del club. Las crónicas del diario Hierro nos permiten seguirlo casi semana a semana.</p>
+   <p>Tras un año tranquilo en 1969-70, el Arbuyo afrontó la temporada 1970-71 en una Primera Categoría Regional ampliada a 20 equipos y 38 jornadas. La empezó con Artabe en el banquillo, que antes había entrenado a los juveniles del Barakaldo. Fue un año muy duro, de los que también forman parte de la historia del club. Las crónicas del diario Hierro nos permiten seguirlo casi semana a semana.</p>
 
    <h4>Un comienzo cuesta arriba</h4>
    <p>La liga empezó torcida: derrota en casa ante el Lemona (2-3) y empate en el campo del San Pedro (2-2). A finales de septiembre llegó la primera alegría, un 3-2 al Bea que subió al equipo del puesto 17 al 12. Pero octubre fue un mes negro, con cuatro derrotas seguidas, entre ellas un 1-5 en casa ante el Ortuella.</p>
@@ -1620,6 +1846,7 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
   ["1965","Semifinal de Copa","Tras eliminar al Ortuella y al Deusto, el Arbuyo cae ante el Bilbao Athletic en Fadura."],
   ["1967","Ascenso a Primera Regional","Promoción ante el Amurrio y el Zorroza. Un 3-0 en casa sentencia el ascenso."],
   ["1969","Trofeo Pachuco Prats","Campeones ante el Barakaldo en Lasesarre, por penaltis.",1],
+  ["1970","Firmes en Primera","Con José Quintana en el banquillo y los goles de Luis, el Arbuyo acaba undécimo de dieciséis y mantiene la categoría. El club tenía unos 300 socios.",0,"temporada-69-70"],
   ["1971","Descenso a Segunda","Cuatro años después del ascenso, el Arbuyo baja a Segunda Regional. Se despide de la categoría con dos victorias, ante el Gallarta y en Lujua.",0,"descenso-70-71"],
   ["1971","La cantera en San Mamés","Los infantiles del Arbuyo, con un joven Andoni Goikoetxea, juegan la final del I Trofeo Radio Juventud en San Mamés. Gana el Arenas, 4-0."]
  ];
