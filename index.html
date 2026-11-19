@@ -288,6 +288,7 @@ blockquote{margin:12px 0;padding:0;font-style:italic}
 @media(max-width:520px){.ml em{display:inline;font-size:12px}.ml em:before{content:"· "}}
 .cronica{border:1px solid var(--line);border-left:4px solid var(--green);border-radius:8px;overflow:hidden;margin:26px 0 30px;background:var(--card);clear:both}
 .cronica .eh{border-radius:0}
+@media(max-width:560px){.eg{white-space:normal}}
 .cronica .mt{border-bottom:1px solid var(--line)}
 .cb{padding:16px 18px 6px;background:var(--green2)}
 .cb .gol{font-size:15px;margin-bottom:10px}
@@ -512,6 +513,29 @@ body.vc #cromos{flex:1 0 auto;width:100%;background:repeating-linear-gradient(90
 .desc-sent{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:start;margin:10px 0 24px}
 .desc-sent .foto{margin:0;max-width:200px}
 @media(max-width:600px){.desc-sent{grid-template-columns:minmax(0,1fr)}.desc-sent .foto{justify-self:center}}
+.rec-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:22px 0 30px;clear:both}
+.rec-grid.uno{grid-template-columns:minmax(0,520px);justify-content:center}
+.rcard{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.rcard .rh{display:flex;justify-content:space-between;gap:8px;background:var(--green);color:#fff;padding:7px 12px;font-size:13px;font-weight:700}
+.rcard .rm{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:8px;align-items:center;padding:10px 12px;border-bottom:1px solid var(--line);font-size:16px}
+.rcard .rm>span:first-child{text-align:right}
+.rcard .rm .a{font-weight:800;color:var(--gt)}
+.rcard .sc{min-width:56px;font-size:19px;padding:5px 10px}
+.rcard>p{font-size:15px;line-height:1.5;margin:10px 14px;text-align:left}
+.rcard figure{margin:auto 14px 14px}
+.rcard img{display:block;width:100%;height:auto;border-radius:4px}
+.rcard figcaption{font-size:13px;color:var(--soft);margin-top:5px}
+@media(max-width:640px){.rec-grid{grid-template-columns:minmax(0,1fr)}}
+.perfiles{display:grid;gap:20px;margin:20px 0 28px;clear:both}
+.perfil{display:grid;grid-template-columns:200px minmax(0,1fr);gap:22px;align-items:start;background:var(--card);border:1px solid var(--line);border-top:4px solid var(--red);border-radius:8px;padding:18px 20px}
+.perfil figure{margin:0}
+.perfil img{display:block;width:100%;height:auto;border-radius:4px}
+.perfil figcaption{font-size:13px;color:var(--soft);margin-top:5px}
+.perfil h5{margin:0 0 4px;font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:900;font-size:28px;line-height:1.1;color:var(--green)}
+.perfil .pf{margin:0 0 12px;font-size:15px;font-weight:600;color:var(--red);text-align:left}
+.perfil p{font-size:16px}
+@media(max-width:600px){.perfil{grid-template-columns:minmax(0,1fr)}.perfil figure{max-width:220px;justify-self:center}}
+.desc-sent .foto a,.rcard a,.perfil a{display:block}
 .homenaje{margin:30px 0;padding:22px 24px;border-radius:10px;background:var(--card);border:2px solid var(--green);border-left:10px solid var(--green);clear:both}
 .homenaje h4{margin:0 0 4px;font-size:30px;color:var(--green)}
 .homenaje .hf{margin:0 0 12px;font-size:15px;font-weight:600;color:var(--red);text-align:left}
@@ -1007,16 +1031,185 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
   </article>
   <article class="cap" id="descenso-70-71">
    <h3 class="ct">1970-71: el descenso a Segunda</h3>
-   <p class="cs">Primera Categoría Regional · temporada 1970-71 · entrenador: Artabe</p>
-   <p>Después del ascenso de 1967 y de la gran temporada 1968-69, el Arbuyo afrontó la temporada 1970-71 en Primera Categoría Regional, una liga larga de 20 equipos y 38 jornadas. En el banquillo estaba Artabe. Fue un año muy duro, de los que también forman parte de la historia del club.</p>
+   <p class="cs">Primera Categoría Regional · temporada 1970-71 · entrenador: Artabe (hasta enero)</p>
+   <p>Después del ascenso de 1967 y de la gran temporada 1968-69, el Arbuyo afrontó la temporada 1970-71 en Primera Categoría Regional, una liga larga de 20 equipos y 38 jornadas. La empezó con Artabe en el banquillo, que antes había entrenado a los juveniles del Barakaldo. Fue un año muy duro, de los que también forman parte de la historia del club. Las crónicas del diario Hierro nos permiten seguirlo casi semana a semana.</p>
 
    <h4>Un comienzo cuesta arriba</h4>
    <p>La liga empezó torcida: derrota en casa ante el Lemona (2-3) y empate en el campo del San Pedro (2-2). A finales de septiembre llegó la primera alegría, un 3-2 al Bea que subió al equipo del puesto 17 al 12. Pero octubre fue un mes negro, con cuatro derrotas seguidas, entre ellas un 1-5 en casa ante el Ortuella.</p>
    <p>En noviembre el equipo dio señales de vida con un meritorio empate en Ermua (1-1), uno de los gallitos de la liga, y otro ante el Portugalete. Aun así, desde noviembre el Arbuyo ya ocupaba el penúltimo puesto de la tabla, y ahí pasaría casi toda la temporada.</p>
+   <div class="rec-grid">
+    <article class="rcard">
+     <div class="rh"><span>27 sep. 1970 · J4</span><span>En Arbuyo</span></div>
+     <div class="rm"><span><span class="a">Arbuyo</span></span><span class="sc G">3<i>-</i>2</span><span>Bea</span></div>
+     <p>La primera victoria de la liga. Sarria marcó los dos goles de la primera parte y el tercero llegó de penalti. El Bea recortó al final, pero ya no le dio tiempo.</p>
+     <figure><a href="fotos/hierro-1970-09-30-bea.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-09-30-bea.jpg" alt="Crónica del diario Hierro del partido Arbuyo 3 - Bea 2" width="381" height="196" loading="lazy"></a><figcaption>Hierro, 30 de septiembre de 1970.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>11 oct. 1970 · J6</span><span>En Arbuyo</span></div>
+     <div class="rm"><span><span class="a">Arbuyo</span></span><span class="sc P">1<i>-</i>2</span><span>Sondica</span></div>
+     <p>Lo mejor de la primera parte fue un tiro de Sarria al larguero. El Sondica marcó dos goles tras el descanso y Galo recortó a cinco minutos del final.</p>
+     <figure><a href="fotos/hierro-1970-10-14-sondica.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-10-14-sondica.jpg" alt="Crónica del diario Hierro del partido Arbuyo 1 - Sondica 2" width="374" height="183" loading="lazy"></a><figcaption>Hierro, 14 de octubre de 1970.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>18 oct. 1970 · J7</span><span>Fuera</span></div>
+     <div class="rm"><span>Amaika</span><span class="sc P">1<i>-</i>0</span><span><span class="a">Arbuyo</span></span></div>
+     <p>Un solo gol, de Amo, nada más empezar la segunda parte. El portero del Arbuyo, Álvarez, se lució con varias paradas de mucho mérito.</p>
+     <figure><a href="fotos/hierro-1970-10-21-amaika.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-10-21-amaika.jpg" alt="Crónica del diario Hierro del partido Amaika 1 - Arbuyo 0" width="377" height="182" loading="lazy"></a><figcaption>Hierro, 21 de octubre de 1970.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>8 nov. 1970 · J10</span><span>En Arbuyo</span></div>
+     <div class="rm"><span><span class="a">Arbuyo</span></span><span class="sc P">1<i>-</i>2</span><span>Moraza</span></div>
+     <p>Se adelantó el Arbuyo con un remate de Calvo a una falta sacada por Sarria, pero el Moraza, mejor durante todo el partido, le dio la vuelta en la segunda parte.</p>
+     <figure><a href="fotos/hierro-1970-11-11-moraza.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-11-11-moraza.jpg" alt="Crónica del diario Hierro del partido Arbuyo 1 - Moraza 2" width="372" height="174" loading="lazy"></a><figcaption>Hierro, 11 de noviembre de 1970.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>15 nov. 1970 · J11</span><span>Fuera</span></div>
+     <div class="rm"><span>Ermua</span><span class="sc E">1<i>-</i>1</span><span><span class="a">Arbuyo</span></span></div>
+     <p>Partido serio, bien cerrado atrás y a la contra. Ismael marcó con un fuerte disparo y el Ermua, uno de los gallitos de la liga, solo pudo empatar de penalti.</p>
+     <figure><a href="fotos/hierro-1970-11-18-ermua.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-11-18-ermua.jpg" alt="Crónica del diario Hierro del partido Ermua 1 - Arbuyo 1" width="370" height="180" loading="lazy"></a><figcaption>Hierro, 18 de noviembre de 1970.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>22 nov. 1970 · J12</span><span>En Arbuyo</span></div>
+     <div class="rm"><span><span class="a">Arbuyo</span></span><span class="sc E">1<i>-</i>1</span><span>Portugalete</span></div>
+     <p>El Portugalete estrelló un balón en el poste y falló un penalti. Marcó Arámburu y empató Cuesta. Los mejores del Arbuyo: Eguilaz, Niño y Márquez.</p>
+     <figure><a href="fotos/hierro-1970-11-25-portugalete.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-11-25-portugalete.jpg" alt="Crónica del diario Hierro del partido Arbuyo 1 - Portugalete 1" width="375" height="202" loading="lazy"></a><figcaption>Hierro, 25 de noviembre de 1970.</figcaption></figure>
+    </article>
+   </div>
+
+   <h4>Una lección de deportividad en San Vicente</h4>
+   <div class="desc-sent">
+    <div>
+     <p>El 29 de noviembre el Arbuyo se llevó la peor goleada del año: 6-1 en el campo del San Vicente. Los seis goles llegaron en la primera parte, obra de Santos, Aparicio, Javi, Roy, Larrea y Zuazo.</p>
+     <p>Pero la crónica de aquel partido recuerda sobre todo un gesto. Con el partido resuelto, dos jugadores del San Vicente, Zuazo y Santos, pidieron por su cuenta a su entrenador que los cambiara para que pudieran jugar dos chavales, Maestro y Navas. El periódico aplaudió la idea. Con el San Vicente ya más relajado, el Arbuyo marcó en la segunda parte el gol de la honra.</p>
+     <p>Cuatro meses después, el Arbuyo se tomaría la revancha.</p>
+    </div>
+    <figure class="foto" style="max-width:300px"><a href="fotos/hierro-1970-12-02-san-vicente.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-12-02-san-vicente.jpg" alt="Recorte del diario Hierro: San Vicente 6, Arbuyo 1, con una foto del primer gol del San Vicente" width="375" height="631" loading="lazy"></a><figcaption>Foto del primer gol del San Vicente (Hierro, 2 de diciembre de 1970).</figcaption></figure>
+   </div>
 
    <h4>Pelea hasta el final</h4>
    <p>El invierno trajo algunas victorias de mérito: 2-3 en el campo de la Peña, 1-0 al Miravalles, 2-0 al Lujua y 1-2 en el campo del Bea. En febrero el Arbuyo le arrancó un empate (1-1) al líder, el Zalla, y en marzo encadenó un 3-0 al Amaika y un 2-1 a La Arboleda que le permitieron salir por un momento del puesto 19.</p>
-   <p>Pero la primavera se le hizo larga. Un 3-5 en casa ante el Ermua y las derrotas en Moraza, Portugalete, Gernika y Zamudio dejaron al equipo sin margen. Ni siquiera la goleada a la Peña (5-2) el 2 de mayo fue suficiente.</p>
+   <figure class="foto" style="max-width:451px"><a href="fotos/hierro-1970-12-30-miravalles.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-12-30-miravalles.jpg" alt="Recorte del diario Hierro con una foto del equipo del Arbuyo, de pie y agachados, y la crónica del Arbuyo 1 - Miravalles 0" width="451" height="680" loading="lazy"></a><figcaption>«El Arbuyo, que venció por un solitario gol al Miravalles». La foto del equipo que publicó el Hierro el 30 de diciembre de 1970.</figcaption></figure>
+   <article class="cronica" aria-label="Crónica del partido Arbuyo 1 - Miravalles 0">
+    <div class="eh"><span class="et">Crónica del partido</span><span class="eg">Primera Regional · 17.ª jornada · 27 dic. 1970 · En Arbuyo</span></div>
+    <div class="mt sinl"><span class="lo"><span class="a">Arbuyo</span></span><span class="sc G">1<i>-</i>0</span><span class="vi"><span>Miravalles</span></span></div>
+    <div class="cb">
+     <p class="gol"><b>Gol:</b> Moraleja (66').</p>
+     <ul class="xi al"><li><b>Arbuyo:</b> Eguilaz; Lubián, Márquez, Moya; Niño, Sarria; Moraleja, Marcos, Carlos, Pradera (Ismael) y Díaz (Álvaro).</li><li><b>Miravalles:</b> Zubiaur; Real, Salazar, Zubero; Garay, Dúo; Falces, Ríos, González, Martínez y Patiño (Otaola).</li></ul>
+     <p>El Arbuyo mandó desde el primer minuto, encerró al Miravalles en su campo y tuvo muchas ocasiones, pero se llegó al descanso sin goles. En la segunda parte apretó todavía más hasta que, a los 21 minutos, Moraleja marcó el gol de la victoria. Después el Miravalles buscó el empate, pero la defensa del Arbuyo aguantó hasta el final. Según la crónica, el resultado se quedó corto para lo que hizo el equipo.</p>
+     <p>Los mejores del Arbuyo fueron Eguilaz, Moraleja y Sarria. Arbitró López de Uralde.</p>
+     <p class="src">Fuente: diario Hierro, 30 de diciembre de 1970.</p>
+    </div>
+   </article>
+
+   <h4>Cambio en el banquillo</h4>
+   <div class="desc-sent">
+    <div>
+     <p>A mediados de enero de 1971 el Hierro dio la noticia: Artabe ya no entrenaba al Arbuyo. El periódico lo presentaba como un técnico capaz y muy trabajador, que había preparado al equipo desde el comienzo de la temporada. Todavía no hemos encontrado quién se hizo cargo del equipo después.</p>
+    </div>
+    <figure class="foto" style="max-width:300px"><img src="fotos/hierro-1971-01-20-artabe.jpg" alt="Recorte del diario Hierro titulado: Artabe ya no entrena al Arbuyo" width="472" height="174" loading="lazy"><figcaption>Hierro, 20 de enero de 1971.</figcaption></figure>
+   </div>
+
+   <h4>Promesas de la cantera</h4>
+   <p>Los miércoles, el Hierro dedicaba una sección, «Promesas de nuestra cantera», a los jóvenes que destacaban en los campos de Bizkaia. Aquella temporada salieron en ella dos jugadores del Arbuyo.</p>
+   <div class="perfiles">
+    <article class="perfil">
+     <figure><a href="fotos/hierro-1971-01-27-eguilaz.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1971-01-27-eguilaz.jpg" alt="Recorte del diario Hierro con la foto y el perfil del portero Eguilaz, del Arbuyo" width="238" height="778" loading="lazy"></a><figcaption>Hierro, 27 de enero de 1971.</figcaption></figure>
+     <div>
+      <h5>Eguilaz, el portero</h5>
+      <p class="pf">Antonio Eguilaz Rubiera · Bilbao, 8 de septiembre de 1950 · 1,80 m y 72 kg</p>
+      <p>Siempre había jugado de portero. Empezó en el juvenil de La Salle, donde estuvo cuatro temporadas, pasó después al Larramendi y aquel año fichó por el Arbuyo, donde era titular. El periódico destacaba su rapidez de reflejos, su agilidad y su valentía, y contaba que ya había clubes interesados en él, alguno de los grandes.</p>
+      <p>Era estudiante y admiraba a Iribar. Su ilusión era llegar lo más lejos posible en el fútbol sin dejar los estudios. Veía como favoritos al título al Ermua, al Zalla o al Santurce, y estaba convencido de que el Arbuyo iba a mejorar en la clasificación.</p>
+     </div>
+    </article>
+    <article class="perfil">
+     <figure><a href="fotos/hierro-1971-03-17-alonso.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1971-03-17-alonso.jpg" alt="Recorte del diario Hierro con el perfil y la foto de Alonso, del Arbuyo" width="226" height="777" loading="lazy"></a><figcaption>Hierro, 17 de marzo de 1971.</figcaption></figure>
+     <div>
+      <h5>Alonso, el incansable</h5>
+      <p class="pf">Baracaldo, 27 de noviembre de 1951 · 1,69 m y 67 kg</p>
+      <p>Jugaba de medio o de interior, aunque prefería el centro del campo. El Hierro lo describía como un jugador fuerte, duro e incansable, que ayudaba igual en ataque que en defensa. Antes de llegar al Arbuyo pasó dos temporadas en el juvenil de la Academia Zorroza, y llegaron a interesarse por él el primer equipo del Zorroza y algunos clubes de Primera Regional.</p>
+      <p>Creía que el Arbuyo estaba teniendo mala suerte y que acabaría en una zona tranquila de la tabla, aunque costaría. Su favorito para el título era el Santurce, y su modelo, Larrauri, el medio del Athletic.</p>
+     </div>
+    </article>
+   </div>
+   <div class="desc-sent">
+    <div>
+     <p><b>Una curiosidad.</b> En diciembre de 1970 la misma sección habló de Marcelino Gutiérrez Díaz, goleador del San Ignacio, nacido en Guriezo (Cantabria). Había empezado en el fútbol como portero del juvenil del Arbuyo, donde estuvo una temporada. Luego pasó al juvenil del Arenas y allí, sin sitio en la portería y con falta de delanteros, le pusieron a jugar de delantero centro. Desde entonces dejó los guantes y se hizo goleador.</p>
+    </div>
+    <figure class="foto" style="max-width:170px"><a href="fotos/hierro-1970-12-09-marcelino.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-12-09-marcelino.jpg" alt="Recorte del diario Hierro con el perfil de Marcelino, del San Ignacio" width="196" height="602" loading="lazy"></a><figcaption>Hierro, 9 de diciembre de 1970.</figcaption></figure>
+   </div>
+
+   <h4>Una primavera muy larga</h4>
+   <p>La primavera se le hizo larga al equipo. Un 3-5 en casa ante el Ermua y las derrotas en Moraza, Portugalete, Gernika y Zamudio dejaron al Arbuyo sin margen.</p>
+   <div class="rec-grid">
+    <article class="rcard">
+     <div class="rh"><span>7 feb. 1971 · J23</span><span>Fuera</span></div>
+     <div class="rm"><span>Bea</span><span class="sc G">1<i>-</i>2</span><span><span class="a">Arbuyo</span></span></div>
+     <p>El Arbuyo mandó en la primera parte: Alonso marcó de falta desde fuera del área y Sarria hizo el segundo con un tiro raso y colocado. El Bea solo pudo recortar.</p>
+     <figure><a href="fotos/hierro-1971-02-10-bea.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1971-02-10-bea.jpg" alt="Crónica del diario Hierro del partido Bea 1 - Arbuyo 2" width="465" height="206" loading="lazy"></a><figcaption>Hierro, 10 de febrero de 1971.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>28 feb. 1971 · J26</span><span>En Arbuyo</span></div>
+     <div class="rm"><span><span class="a">Arbuyo</span></span><span class="sc G">3<i>-</i>0</span><span>Amaika</span></div>
+     <p>Victoria merecida en un campo en mal estado, al que el Arbuyo se adaptó antes que su rival. Goles de Calvo, de Mozas de penalti y de Sarria.</p>
+     <figure><a href="fotos/hierro-1971-03-03-amaika.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1971-03-03-amaika.jpg" alt="Crónica del diario Hierro del partido Arbuyo 3 - Amaika 0" width="463" height="262" loading="lazy"></a><figcaption>Hierro, 3 de marzo de 1971.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>21 mar. 1971 · J29</span><span>Fuera</span></div>
+     <div class="rm"><span>Moraza</span><span class="sc P">3<i>-</i>0</span><span><span class="a">Arbuyo</span></span></div>
+     <p>Fútbol de fuerza en el barrizal de Archanda. El Moraza ganaba 2-0 al descanso y marcó el tercero al final. La crónica destacó el coraje de todos los jugadores.</p>
+     <figure><a href="fotos/hierro-1971-03-24-moraza.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1971-03-24-moraza.jpg" alt="Crónica del diario Hierro del partido Moraza 3 - Arbuyo 0" width="448" height="210" loading="lazy"></a><figcaption>Hierro, 24 de marzo de 1971.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>28 mar. 1971 · J30</span><span>En Arbuyo</span></div>
+     <div class="rm"><span><span class="a">Arbuyo</span></span><span class="sc P">3<i>-</i>5</span><span>Ermua</span></div>
+     <p>Azcoitia adelantó al Arbuyo a los seis minutos, pero el Ermua, que acabaría tercero, remontó con tres goles de Gorrocha. Asensio, con un gol y un penalti, maquilló el marcador.</p>
+     <figure><a href="fotos/hierro-1971-03-31-ermua.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1971-03-31-ermua.jpg" alt="Crónica del diario Hierro del partido Arbuyo 3 - Ermua 5" width="451" height="292" loading="lazy"></a><figcaption>Hierro, 31 de marzo de 1971.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>4 abr. 1971 · J31</span><span>Fuera</span></div>
+     <div class="rm"><span>Portugalete</span><span class="sc P">3<i>-</i>0</span><span><span class="a">Arbuyo</span></span></div>
+     <p>El Portugalete dominó todo el partido, pero el Arbuyo se defendió muy bien y aguantó el 1-0 hasta los últimos minutos. Sarria fue el mejor del Arbuyo.</p>
+     <figure><a href="fotos/hierro-1971-04-07-portugalete.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1971-04-07-portugalete.jpg" alt="Crónica del diario Hierro del partido Portugalete 3 - Arbuyo 0" width="917" height="492" loading="lazy"></a><figcaption>Hierro, 7 de abril de 1971.</figcaption></figure>
+    </article>
+    <article class="rcard">
+     <div class="rh"><span>25 abr. 1971 · J34</span><span>Fuera</span></div>
+     <div class="rm"><span>Zamudio</span><span class="sc P">3<i>-</i>2</span><span><span class="a">Arbuyo</span></span></div>
+     <p>Partido abierto, con los dos equipos al ataque. Un gol en propia puerta a los cinco minutos pesó mucho. Cuesta y Sainz marcaron para el Arbuyo.</p>
+     <figure><a href="fotos/hierro-1971-04-28-zamudio.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1971-04-28-zamudio.jpg" alt="Crónica del diario Hierro del partido Zamudio 3 - Arbuyo 2" width="465" height="231" loading="lazy"></a><figcaption>Hierro, 28 de abril de 1971.</figcaption></figure>
+    </article>
+   </div>
+
+   <p>Entre tanta derrota hubo una tarde para recordar: la visita del San Vicente, el equipo que le había metido seis goles en noviembre.</p>
+   <article class="cronica" aria-label="Crónica del partido Arbuyo 1 - San Vicente 0">
+    <div class="eh"><span class="et">La revancha</span><span class="eg">Primera Regional · 32.ª jornada · 11 abr. 1971 · En Arbuyo</span></div>
+    <div class="mt sinl"><span class="lo"><span class="a">Arbuyo</span></span><span class="sc G">1<i>-</i>0</span><span class="vi"><span>San Vicente</span></span></div>
+    <div class="cb">
+     <p class="gol"><b>Gol:</b> Sarria (67').</p>
+     <ul class="xi al"><li><b>Arbuyo:</b> Pedro; Lara, Cabrejas, Azcoiti; Márquez, Díaz; Pradera, Marcos, Cuesta, Sarria y Carlos.</li><li><b>San Vicente:</b> Méndez; Fernández, Abad, Martínez; Larrea, Arechavala; Aparicio, Casado, Zuluaga, Osinaga y Roy.</li></ul>
+     <p>Partido muy disputado, con los dos equipos peleando cada balón. A mitad de la primera parte el árbitro pitó penalti contra el Arbuyo, y el portero Pedro lo paró. En la segunda parte el San Vicente atacó con peligro, pero fue el Arbuyo el que marcó: Sarria, a los 22 minutos de la reanudación, hizo el gol de la victoria.</p>
+     <p>Los mejores del Arbuyo fueron Sarria, Pedro y Márquez. Arbitró Bullón, con un buen trabajo según la crónica.</p>
+     <p class="src">Fuente: diario Hierro, 14 de abril de 1971.</p>
+    </div>
+   </article>
+   <figure class="foto" style="max-width:540px"><a href="fotos/hierro-1971-04-14-san-vicente.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1971-04-14-san-vicente.jpg" alt="Crónica del diario Hierro del partido Arbuyo 1 - San Vicente 0" width="667" height="330" loading="lazy"></a><figcaption>Hierro, 14 de abril de 1971.</figcaption></figure>
+
+   <p>Ni siquiera la goleada a la Peña (5-2) el 2 de mayo fue suficiente, aunque aquella tarde el Arbuyo jugó como si fuera el líder.</p>
+   <div class="rec-grid uno">
+    <article class="rcard">
+     <div class="rh"><span>2 may. 1971 · J35</span><span>En Arbuyo</span></div>
+     <div class="rm"><span><span class="a">Arbuyo</span></span><span class="sc G">5<i>-</i>2</span><span>Peña</span></div>
+     <p>Partido de gran ritmo y muy limpio. Según la crónica, parecía un duelo entre líderes y no entre colistas. Callejo marcó dos goles, y Manolín, Moya y Sarria, uno cada uno. Los mejores del Arbuyo: Callejo y «Norit».</p>
+     <figure><a href="fotos/hierro-1971-05-05-pena.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1971-05-05-pena.jpg" alt="Crónica del diario Hierro del partido Arbuyo 5 - Peña 2" width="446" height="190" loading="lazy"></a><figcaption>Hierro, 5 de mayo de 1971.</figcaption></figure>
+    </article>
+   </div>
+   <p><b>Un nombre de la casa.</b> En las alineaciones de esa primavera aparece un apellido muy ligado a esta historia. Ante el Ermua entró como cambio un tal Bermejo, que fue titular en Zamudio y también en la despedida ante el Gallarta, y en el 5-2 a la Peña el periódico pone a «Norit» entre los mejores del partido. Casi con seguridad se trata de <b>Nori Bermejo</b>, de cuyo archivo salen muchos de los recortes y fotos con los que hoy contamos la historia del club.</p>
+
+   <div class="homenaje sarria">
+    <h4>Sarria, el hombre del Arbuyo</h4>
+    <p class="hf">El nombre que más se repite en las crónicas de 1970-71</p>
+    <p>Si hay un jugador que aparece una y otra vez en las crónicas de aquella temporada, es Sarria. Está en las quince alineaciones del Arbuyo que publicó el Hierro, y en nueve de las catorce crónicas que señalan a los mejores de cada partido, su nombre está entre ellos.</p>
+    <p>También fue decisivo con el balón: marcó al menos seis de los goles que cuentan esas crónicas. Hizo los dos primeros en la primera victoria de la liga, ante el Bea, y marcó en la victoria en el campo del Bea, en el 3-0 al Amaika, en el 5-2 a la Peña y, sobre todo, el gol de la revancha ante el San Vicente.</p>
+   </div>
 
    <h4>La sentencia en Miravalles</h4>
    <div class="desc-sent">
@@ -1071,7 +1264,7 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
    </table></div>
    <figure class="foto"><img src="fotos/hierro-1971-05-24-clasificacion.jpg" alt="Recorte del diario Hierro con los resultados de la última jornada y la clasificación final de Primera Regional 1970-71" width="355" height="278" loading="lazy" style="max-width:355px"><figcaption>Resultados de la última jornada y clasificación final (Hierro, 24 de mayo de 1971).</figcaption></figure>
    <p>El Arbuyo terminó en el puesto 17, con 29 puntos, empatado con el Amaika. Bajaron con él la Peña, el Lujua y el propio Amaika.</p>
-   <p class="src">Fuentes: diario Hierro (resultados y clasificaciones de los lunes de la temporada 1970-71; 1 de marzo de 1971 para el entrenador; 10, 19 y 24 de mayo de 1971).</p>
+   <p class="src">Fuentes: diario Hierro: resultados y clasificaciones de los lunes de la temporada 1970-71; crónicas y reportajes de los miércoles (30 de septiembre, 14 y 21 de octubre, 11, 18 y 25 de noviembre, 2, 9 y 30 de diciembre de 1970; 20 y 27 de enero, 10 de febrero, 3, 17, 24 y 31 de marzo, 7, 14 y 28 de abril, 5 y 19 de mayo de 1971); 10 y 24 de mayo de 1971. Archivo de H. Bermejo (Nori).</p>
   </article>
 
   <article class="cap" id="anos-70">
