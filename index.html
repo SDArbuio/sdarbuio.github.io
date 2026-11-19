@@ -471,6 +471,24 @@ body.vc #cromos{flex:1 0 auto;width:100%;background:repeating-linear-gradient(90
 .llamada{margin:28px 0;padding:18px 20px;border:2px dashed var(--green);border-radius:10px;text-align:center}
 .llamada h4{margin:0 0 6px}
 .llamada p{margin:0 auto;text-align:center}
+.camino{list-style:none;margin:22px 0 30px;padding:0 0 0 26px;position:relative}
+.camino:before{content:"";position:absolute;left:8px;top:10px;bottom:24px;width:4px;border-radius:2px;background:repeating-linear-gradient(to bottom,var(--green) 0 10px,transparent 10px 16px)}
+.camino li{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 22px;align-items:start;margin:0 0 22px;padding:16px 18px;border-radius:10px;background:var(--card);border:1px solid var(--line)}
+.camino li:before{content:"";position:absolute;left:-25px;top:20px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:4px solid var(--green)}
+.camino .ronda{display:inline-block;margin:0 0 6px;padding:2px 9px;border-radius:4px;background:var(--green);color:#fff;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.camino h5{margin:0 0 4px;font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:900;font-size:26px;line-height:1.1;color:var(--ink)}
+.camino h5 .yo{color:var(--red)}
+.camino .cuando{margin:0 0 6px;font-weight:600;color:var(--soft);text-align:left}
+.camino .cnota{margin:0;font-size:15px;text-align:left}
+.camino figure{margin:0;max-width:300px}
+.camino figure img{display:block;max-width:100%;height:auto;background:#fff;border-radius:4px;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+.camino figcaption{margin-top:6px;font-size:13px;color:var(--soft);text-align:center}
+.camino li.fin{background:var(--green);border-color:var(--green);grid-template-columns:minmax(0,1fr)}
+.camino li.fin:before{border-color:var(--red);background:var(--red)}
+.camino li.fin .ronda{background:var(--red)}
+.camino li.fin h5,.camino li.fin .cuando,.camino li.fin .cnota{color:#fff}
+.camino li.fin h5 .yo{color:#fff;text-decoration:underline;text-decoration-color:var(--red);text-decoration-thickness:4px}
+@media(max-width:700px){.camino li{grid-template-columns:minmax(0,1fr)}.camino figure{max-width:100%;justify-self:center}}
 .homenaje{margin:30px 0;padding:22px 24px;border-radius:10px;background:var(--card);border:2px solid var(--green);border-left:10px solid var(--green);clear:both}
 .homenaje h4{margin:0 0 4px;font-size:30px;color:var(--green)}
 .homenaje .hf{margin:0 0 12px;font-size:15px;font-weight:600;color:var(--red);text-align:left}
@@ -978,6 +996,37 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
     </div>
    </div>
    <p>En 1971 el Arbuyo sacó por primera vez un equipo infantil, entrenado por Luis Mari Menéndez. Su gran logro fue llegar a la final del Campeonato de Bizkaia infantil, el primer Trofeo Radio Juventud, y jugarla nada menos que en el campo de San Mamés, ante el Arenas de Getxo.</p>
+   <h4>El camino a la final de San Mamés</h4>
+   <p>El primer Trofeo Radio Juventud de infantiles reunió a equipos de toda Bizkaia. Primero se jugó una liguilla por grupos y después, eliminatorias hasta la final. Cada semana el diario Hierro publicaba la programación de los partidos. Los resultados del infantil apenas salían en el periódico, pero gracias a esos anuncios podemos seguir paso a paso el camino del Arbuyo hasta San Mamés.</p>
+   <ol class="camino">
+    <li>
+     <div><span class="ronda">1.ª fase · liguilla</span><h5><span class="yo">Arbuyo</span> - Moraza San Antón</h5><p class="cuando">Sábado 8 de mayo, a las 5 · Arbuyo</p><p class="cnota">Los infantiles empezaron con una liguilla por grupos. Este es el primer partido del Arbuyo que anuncia el Hierro.</p></div>
+     <figure><img src="fotos/hierro-1971-05-08-radio-juventud.jpg" alt="Programa del Trofeo Radio Juventud de infantiles en el diario Hierro, con el partido Arbuyo-Moraza San Antón" width="194" height="365" loading="lazy"><figcaption>Hierro, 8 de mayo de 1971</figcaption></figure>
+    </li>
+    <li>
+     <div><span class="ronda">1.ª fase · liguilla</span><h5>Escolar Bilbao - <span class="yo">Arbuyo</span></h5><p class="cuando">Domingo 16 de mayo, a las 10:30 · Mallona</p><p class="cnota">Fuera de casa, en el campo de Mallona. El Arbuyo superó la liguilla y entró en las eliminatorias.</p></div>
+     <figure><img src="fotos/hierro-1971-05-14-radio-juventud.jpg" alt="Programa del Trofeo Radio Juventud de infantiles en el diario Hierro, con el partido Escolar Bilbao-Arbuyo en Mallona" width="184" height="464" loading="lazy"><figcaption>Hierro, 14 de mayo de 1971</figcaption></figure>
+    </li>
+    <li>
+     <div><span class="ronda">Octavos de final</span><h5><span class="yo">Arbuyo</span> - Amorebieta</h5><p class="cuando">Domingo 23 de mayo · Arbuyo</p><p class="cnota">Dieciséis equipos en la primera ronda eliminatoria. El Arbuyo jugó en casa y siguió adelante.</p></div>
+     <figure><img src="fotos/hierro-1971-05-22-radio-juventud.jpg" alt="Programa del Trofeo Radio Juventud de infantiles en el diario Hierro, con el partido Arbuyo-Amorebieta" width="233" height="258" loading="lazy"><figcaption>Hierro, 22 de mayo de 1971</figcaption></figure>
+    </li>
+    <li>
+     <div><span class="ronda">Cuartos de final</span><h5><span class="yo">Arbuyo</span> - Portugalete</h5><p class="cuando">Sábado 29 de mayo, a las 6 · Arbuyo</p><p class="cnota">Otra vez en casa. Ganando al Portugalete, el Arbuyo se metió entre los cuatro mejores de Bizkaia.</p></div>
+     <figure><img src="fotos/hierro-1971-05-29-radio-juventud.jpg" alt="Programa del Trofeo Infantil de Radio Juventud en el diario Hierro, con el partido Arbuyo-Portugalete" width="370" height="94" loading="lazy"><figcaption>Hierro, 29 de mayo de 1971</figcaption></figure>
+    </li>
+    <li>
+     <div><span class="ronda">Semifinal · ida</span><h5>La Merced - <span class="yo">Arbuyo</span></h5><p class="cuando">Jueves 10 de junio (Corpus), a las 10 · Archanda</p><p class="cnota">La otra semifinal la jugaban el Arenas y el Bermeo.</p></div>
+     <figure><img src="fotos/hierro-1971-06-09-radio-juventud.jpg" alt="Programa del Trofeo Infantil de Radio Juventud en el diario Hierro, con el partido La Merced-Arbuyo en Archanda" width="186" height="64" loading="lazy"><figcaption>Hierro, 9 de junio de 1971</figcaption></figure>
+    </li>
+    <li>
+     <div><span class="ronda">Semifinal · vuelta</span><h5><span class="yo">Arbuyo</span> - La Merced</h5><p class="cuando">Domingo 13 de junio, a las 11 · Arbuyo</p><p class="cnota">Esta vez en casa. Superando a La Merced, el Arbuyo sacó el billete para San Mamés.</p></div>
+     <figure><img src="fotos/hierro-1971-06-12-radio-juventud.jpg" alt="Programa del Trofeo Infantil de Radio Juventud en el diario Hierro, con el partido Arbuyo-La Merced" width="510" height="254" loading="lazy"><figcaption>Hierro, 12 de junio de 1971</figcaption></figure>
+    </li>
+    <li class="fin">
+     <div><span class="ronda">Final</span><h5>Arenas - <span class="yo">Arbuyo</span></h5><p class="cuando">Sábado 19 de junio de 1971 · San Mamés</p><p class="cnota">El premio a todo el camino: una final en la catedral. La crónica, un poco más abajo.</p></div>
+    </li>
+   </ol>
    <p>No pudo ser. El Arenas, mejor preparado físicamente, se llevó el primer título del trofeo, que para quedarse en propiedad había que ganar dos veces seguidas o tres alternas. Pero para los chavales del Arbuyo, pisar el césped de San Mamés en una final fue un día para recordar. Como casi todos los jugadores eran del barrio, buena parte de Arbuio se fue a animarles a las gradas.</p>
    <figure class="foto"><img src="fotos/sanmames-1971-grada.jpg" alt="Banquillo del Arbuyo y gradas de San Mamés llenas de público en la final infantil de 1971, con el cartel Final Campeonato de Bizkaia Infantil San Mamés año 1971" width="1200" height="759" loading="lazy"><figcaption>En la final se juntó en las gradas mucho público de Arbuyo: la mayoría de los jugadores eran del barrio. Abajo, el banquillo del Arbuyo. El entrenador era Luis Mari Menéndez.</figcaption></figure>
    <article class="cronica" aria-label="Crónica de la final Arenas 4 - Arbuyo 0">
@@ -1007,7 +1056,7 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
     <h4>¿Jugaste aquella final o estuviste en la grada?</h4>
     <p>Si tienes fotos o recuerdos de aquel día en San Mamés, el club quiere conocerlos para completar esta página.</p>
    </div>
-   <p class="src">Fuentes: diario Hierro (27 de mayo y 4 de junio de 1971, y crónica de Julián Sañudo de junio de 1971) y archivo del club.</p>
+   <p class="src">Fuentes: diario Hierro (programación del Trofeo Radio Juventud de mayo y junio de 1971; 27 de mayo y 4 de junio de 1971; crónica de Julián Sañudo del 21 de junio de 1971) y archivo del club.</p>
   </article>
 
 
