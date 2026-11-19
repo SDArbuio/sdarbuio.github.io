@@ -743,6 +743,7 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
    <a href="#anos-30" data-c="anos-30">Años 30</a>
    <a href="#reaparicion" data-c="reaparicion">La Reaparición</a>
    <a href="#anos-60" data-c="anos-60">Años 60</a>
+   <a href="#ascenso" data-c="ascenso">Los del ascenso</a>
    <a href="#pachuco-prats" data-c="pachuco-prats">Torneo Pachuco Prats</a>
    <a href="#temporada-69-70" data-c="temporada-69-70">Temporada 1969-70</a>
    <a href="#descenso-70-71" data-c="descenso-70-71">Descenso 1970-71</a>
@@ -880,7 +881,12 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
    <p>En dicha campaña eran jugadores de la S.D. Arbuyo: Joma, Pichaco, Jacinto, Eusebio, Mazorriaga, José Ramón Peña, Lara Roberto, Mariano, Rafa (capitán), Bolita Pernas, Julito, Marcos, Teo Pachi, entre otros. Y como entrenador, Joselu.</p>
    <p>Al término de esta temporada cesa Joselu como entrenador de la S.D. Arbuyo, dejando un equipo consolidado, con buenos jugadores, los cuales fueron seguidos por ojeadores del Athletic. Sin embargo, todos ellos continuarían la siguiente temporada en el Arbuyo para luchar por el ascenso a 1ª Regional. Para ello, la S.D. Arbuyo ficha como entrenador a Don Agustín Galíndez, quien lideraría el proyecto que dejó Don Joselu.</p>
    <figure class="foto"><img src="fotos/el-hierro-1965.jpg" alt="Recorte del periódico El Hierro con una foto de grupo del Arbuyo y el titular El Arbuyo, un club regional en el que sus jugadores no cobran un céntimo" width="667" height="847" loading="lazy"><figcaption>Periódico El Hierro, 13 de enero de 1965: «El Arbuyo, un club regional en el que sus jugadores no cobran un céntimo».</figcaption></figure>
-   <h4>Los del ascenso 1966-67</h4>
+  </article>
+
+  <article class="cap" id="ascenso">
+   <h3 class="ct">Los del ascenso</h3>
+   <p class="cs">Ascenso a Primera Regional en 1966-67 · y en 1968-69, a un paso de repetir</p>
+   <h4>El ascenso de 1966-67</h4>
    <figure class="foto"><img src="fotos/ascenso-1966-67.jpg" alt="Foto de grupo en blanco y negro de los del ascenso de 1966-67, de pie y agachados" width="1200" height="647" loading="lazy"><figcaption>Los del ascenso 1966-67.<br>De pie: Joma, Márquez, Sesumaga, Lemus, Ferrero, Blanco (presidente), Zamora y Mazorriaga.<br>Agachados: Eusebio, Javi, Cuesta, Piru y Gento.</figcaption></figure>
    <figure class="mini"><img src="fotos/galindez.jpg" alt="Retrato de Agustín Galíndez" width="1200" height="1178" loading="lazy"><figcaption>Agustín Galíndez, entrenador.</figcaption></figure>
    <p>En la temporada 1966-67, la S.D. Arbuyo logra su primer ascenso de categoría desde su reaparición en 1960. El entrenador que consiguió esta hazaña fue Don Agustín Galíndez, que llegó al equipo para la temporada 65-66.</p>
@@ -1903,7 +1909,7 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
   ["1971","La cantera en San Mamés","Los infantiles del Arbuyo, con un joven Andoni Goikoetxea, juegan la final del I Trofeo Radio Juventud en San Mamés. Gana el Arenas, 4-0."],
   ["1980","Bodas de oro","El club celebra sus cincuenta años con un cross popular, dantzaris y un partido entre el Bilbao Athletic de Javier Clemente y el Barakaldo en el campo de Arbuyo.",1,"bodas-de-oro"]
  ];
- const capDe={"1971": "anos-70", "1916": "rica", "1929": "fundacion", "1930": "anos-30", "1932": "anos-30", "1936": "fundacion", "1959": "reaparicion", "1960": "reaparicion", "1965": "anos-60", "1967": "anos-60", "1969": "pachuco-prats"};
+ const capDe={"1971": "anos-70", "1916": "rica", "1929": "fundacion", "1930": "anos-30", "1932": "anos-30", "1936": "fundacion", "1959": "reaparicion", "1960": "reaparicion", "1965": "anos-60", "1967": "ascenso", "1969": "pachuco-prats"};
  document.getElementById('tl').innerHTML=hitos.map(([y,t,d,b,c])=>`<li class="${b?'big':''}"><div class="y">${y}</div><div class="dot"></div><div><h3>${t}</h3><p>${d}</p>${(c||capDe[y])?`<a class="more" href="#${c||capDe[y]}">Leer el capítulo</a>`:''}</div></li>`).join('')+'<li class="mas"><div class="y"></div><div class="dot"></div><div><h3>Continuará…</h3><p>Sigue atento a la web: seguimos investigando y subiendo más historia del Arbuio.</p></div></li>';
 
  document.querySelectorAll('.jor').forEach(el=>{
