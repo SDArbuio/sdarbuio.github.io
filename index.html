@@ -85,7 +85,7 @@ nav .wrap{display:flex;align-items:center;gap:20px;min-height:60px;flex-wrap:wra
 .bar i{display:block;height:100%;background:var(--red);border-radius:7px}
 .cent .row{display:flex;justify-content:space-between;font-weight:600;font-size:15px}
 /* historia */
-#instalaciones{background:var(--green2)}
+#ven-al-campo{background:var(--green2)}
 .tl{list-style:none;margin:32px 0 0;padding:0;position:relative;display:grid;gap:0}
 .tl:before{content:"";position:absolute;left:92px;top:8px;bottom:8px;width:3px;background:var(--green)}
 .tl li{display:grid;grid-template-columns:76px 34px minmax(0,1fr);gap:0 0;padding:14px 0}
@@ -126,6 +126,9 @@ nav .wrap{display:flex;align-items:center;gap:20px;min-height:60px;flex-wrap:wra
 .cromo span{display:block;font-size:13px;color:var(--soft);padding-bottom:8px}
 /* instalaciones */
 .inst{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.inst figure{margin:0}.inst img{display:block;width:100%;height:auto;border-radius:6px;box-shadow:0 8px 20px rgba(11,61,35,.18)}.inst figcaption{font-size:14px;color:var(--soft);margin-top:8px}
+.inst-fotos{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(16px,3vw,32px);align-items:start}.inst-fotos figure{margin:0}.inst-fotos img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:6px;box-shadow:0 8px 20px rgba(11,61,35,.18)}.inst-fotos figcaption{font-size:14px;color:var(--soft);margin-top:8px}.pag-inst .inst-fotos{margin-top:24px}
+@media(max-width:600px){.inst-fotos{grid-template-columns:minmax(0,1fr)}}
 .map{aspect-ratio:4/3;border-radius:6px;overflow:hidden;background:var(--green)}
 .map svg{width:100%;height:100%;display:block}
 .btn{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;border-radius:6px;background:var(--red);color:#fff;font-weight:700;text-decoration:none}
@@ -430,6 +433,11 @@ body.vs #hazte-socio,body.vh #capitulos{flex:1 0 auto;width:100%}
 .balon-cta:hover .bc-bola,.balon-cta:focus-visible .bc-bola{transform:rotate(360deg)}
 @media(max-width:700px){.balon-cta{position:relative;right:auto;bottom:auto;margin:0 0 30px;transform:rotate(1deg)}}
 @media(prefers-reduced-motion:reduce){.balon-cta .bc-bola{transition:none}}
+body:not(.vn) #instalaciones{display:none}
+body.vn .hero,body.vn .centb,body.vn section:not(#instalaciones){display:none}
+body.vn{display:flex;flex-direction:column;min-height:100vh;min-height:100dvh}
+body.vn>nav,body.vn>footer{flex:none;width:100%}
+body.vn #instalaciones{flex:1 0 auto;width:100%;background:linear-gradient(var(--green2),var(--bg) 320px)}
 body:not(.vb) #dona-balon{display:none}
 body.vb .hero,body.vb .centb,body.vb section:not(#dona-balon){display:none}
 body.vb{display:flex;flex-direction:column;min-height:100vh;min-height:100dvh}
@@ -797,6 +805,7 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
    <a href="#decada-70" data-c="decada-70">1971-1973</a>
    <a href="#segunda-73-80" data-c="segunda-73-80">1973-1980</a>
    <a href="#bodas-de-oro" data-c="bodas-de-oro">Bodas de oro 1980</a>
+   <a href="#riada-1983" data-c="riada-1983">La riada de 1983</a>
   </div>
 
   <article class="cap" id="rica">
@@ -2430,6 +2439,26 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
    <p class="src">Fuentes: diario Hierro, 2 de junio de 1980 (pág. 15), 4 de junio de 1980 (pág. 9), 7 de junio de 1980 (pág. 9) y 13 de junio de 1980 (págs. 11 y 16). Fotos de la celebración: archivo del club.</p>
   </article>
 
+  <article class="cap" id="riada-1983">
+   <h3 class="ct">1983: la riada</h3>
+   <p class="cs">26 de agosto de 1983 · el agua llega al campo de Arbuyo</p>
+   <p>El viernes 26 de agosto de 1983, después de varios días lloviendo sin parar, los ríos de Bizkaia se desbordaron en plena Aste Nagusia de Bilbao. Fueron las peores inundaciones que se recuerdan en el País Vasco. En Alonsotegi se salió el Kadagua, y el pueblo fue uno de los más castigados.</p>
+   <p>El agua llegó también al campo de Arbuyo. Estas tres fotos son de José Ramón Gutiérrez Rodríguez, Joserra, que en 1980 formaba parte de la directiva del club (aparece en la foto de las bodas de oro). Muestran cómo quedó el club aquel día.</p>
+   <figure class="foto" style="max-width:760px"><a href="fotos/riada-1983-local.jpg" target="_blank" rel="noopener"><img src="fotos/riada-1983-local.jpg" alt="El agua del Kadagua corre con fuerza por delante del edificio de reuniones del Arbuyo, una casa baja con tejado de teja, junto a una barandilla roja" width="1200" height="815" loading="lazy"></a><figcaption>El edificio de reuniones del Arbuyo, donde se guardaban los trofeos y se hacían las reuniones del club, con la riada pasando por delante.</figcaption></figure>
+   <div class="galeria">
+    <figure class="foto"><a href="fotos/riada-1983-porteria.jpg" target="_blank" rel="noopener"><img src="fotos/riada-1983-porteria.jpg" alt="El campo de Arbuyo convertido en un lago de agua marrón; solo asoma la parte de arriba de una portería" width="1200" height="776" loading="lazy"></a><figcaption>Del campo solo asoma la parte de arriba de la portería, la más cercana a la entrada.</figcaption></figure>
+    <figure class="foto"><a href="fotos/riada-1983-ambigu.jpg" target="_blank" rel="noopener"><img src="fotos/riada-1983-ambigu.jpg" alt="El ambigú del campo, pintado con triángulos verdes y rojos, rodeado de agua" width="1200" height="777" loading="lazy"></a><figcaption>El ambigú, pintado con los colores del Arbuyo, rodeado de agua.</figcaption></figure>
+   </div>
+
+   <div class="continua">
+    <h4>¿Te acuerdas de la riada?</h4>
+    <p>Si viviste aquellos días en Arbuyo, cuéntanos cómo fueron: hasta dónde llegó el agua, qué se perdió, cómo se limpió el campo y cuándo se volvió a jugar. Y si tienes más fotos, nos encantará verlas.</p>
+    <a class="btn" href="mailto:sdarbuio@hotmail.com?subject=La%20riada%20de%201983" target="_blank" rel="noopener">Cuéntanos lo que recuerdes</a>
+    <p class="pie">Iremos añadiendo aquí todo lo que nos llegue.</p>
+   </div>
+   <p class="src">Fotos: José Ramón Gutiérrez Rodríguez (Joserra). Sobre las inundaciones de agosto de 1983 en Bizkaia: Deia, 26 de agosto de 2023.</p>
+  </article>
+
 
  </div>
  <div class="wrap fin-hist"><a class="volver" href="#inicio">← Volver a la portada</a></div>
@@ -2437,26 +2466,15 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
 
 
 
-<section class="band" id="instalaciones">
+<section class="band" id="ven-al-campo">
  <div class="wrap inst">
   <div>
    <h2>Ven al campo</h2>
    <p class="lead">Jugamos en el campo de Basteita, en Alonsotegi, a pocos minutos del barrio de Arbuio.</p>
    <p>Aunque ahora este sea nuestro campo, el primer campo de Arbuio se levantó en 1929 en terrenos cedidos por la fábrica RICA. El de 1960 lo niveló el barrio a pala y carretilla, y fue de los pocos de Bizkaia con duchas de agua caliente.</p>
-   <p style="margin-top:20px"><a class="btn" href="https://www.google.com/maps?q=43.248329,-2.987139" target="_blank" rel="noopener">Cómo llegar</a></p>
+   <p style="margin-top:20px;display:flex;flex-wrap:wrap;gap:10px"><a class="btn" href="https://www.google.com/maps?q=43.248329,-2.987139" target="_blank" rel="noopener">Cómo llegar</a><a class="btn ghost2" style="margin-top:0" href="#instalaciones">Ver las instalaciones</a></p>
   </div>
-  <div class="map" aria-hidden="true">
-   <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
-    <rect width="400" height="300" fill="#1f7442"/>
-    <g fill="none" stroke="#fff" stroke-width="3" opacity=".85">
-     <rect x="40" y="40" width="320" height="220"/><path d="M200 40v220"/><circle cx="200" cy="150" r="34"/>
-     <rect x="40" y="95" width="48" height="110"/><rect x="312" y="95" width="48" height="110"/>
-     <rect x="40" y="125" width="18" height="50"/><rect x="342" y="125" width="18" height="50"/>
-    </g>
-    <circle cx="200" cy="150" r="4" fill="#fff"/>
-    <g transform="translate(290 70)"><path d="M0 0c-14 0-24 10-24 23 0 17 24 37 24 37s24-20 24-37C24 10 14 0 0 0z" fill="#d7262e"/><circle cy="22" r="8" fill="#fff"/></g>
-   </svg>
-  </div>
+  <figure class="inst-foto"><img src="fotos/basteita-campo.jpg" alt="El campo de Basteita, de hierba artificial, con la chimenea de ladrillo y los vestuarios al fondo y los montes detrás" width="999" height="749" loading="lazy"><figcaption>El campo de Basteita.</figcaption></figure>
  </div>
 </section>
 
@@ -2506,6 +2524,19 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
    <p class="resumen" id="g-resumen"></p>
    <div class="acciones"><a class="btn" id="s-mail" href="mailto:sdarbuio@hotmail.com" target="_blank" rel="noopener">Enviar por correo</a><a class="btn ghost2" href="#inicio">Volver a la portada</a></div>
   </div>
+ </div>
+</section>
+
+<section class="band" id="instalaciones" aria-labelledby="inst-t">
+ <div class="wrap pag-inst">
+  <a class="volver" href="#inicio">← Volver a la portada</a>
+  <h2 id="inst-t">Instalaciones</h2>
+  <p class="lead">El campo de Basteita, en Alonsotegi, es hoy la casa del Arbuio.</p>
+  <div class="inst-fotos">
+   <figure><img src="fotos/basteita-instalaciones.jpg" alt="Basteita desde la banda: la chimenea de ladrillo, las instalaciones y el campo" width="1200" height="840" loading="lazy"><figcaption>La chimenea y las instalaciones, desde la banda.</figcaption></figure>
+   <figure><img src="fotos/basteita-bar.jpg" alt="El bar del campo, con paredes verdes, barra de ladrillo y pizarra de precios" width="960" height="542" loading="lazy"><figcaption>El bar, de verde, como el club.</figcaption></figure>
+  </div>
+  <p style="margin-top:24px"><a class="btn" href="https://www.google.com/maps?q=43.248329,-2.987139" target="_blank" rel="noopener">Cómo llegar</a></p>
  </div>
 </section>
 
@@ -2748,7 +2779,8 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
   ["1971","Final en San Mamés","Los infantiles del Arbuyo, con un joven Andoni Goikoetxea, juegan la final del I Trofeo Radio Juventud en San Mamés. Gana el Arenas, 4-0.",0,"anos-70"],
   ["1972","De vuelta en Primera","Un año después del descenso, el Arbuyo vuelve a Primera Regional, aunque solo aguanta una temporada. Los hermanos Goicoechea, de Alonsotegi, dan el salto del Arbuyo al Athletic.",0,"decada-70"],
   ["1975","A un paso de volver","En el invierno de 1974-75 el Arbuyo pelea por el ascenso en Segunda Regional, con el Retuerto y el Acero. Termina sexto.",0,"segunda-73-80"],
-  ["1980","Cincuenta años de club","El club celebra sus cincuenta años con un cross popular, dantzaris y un partido entre el Bilbao Athletic de Javier Clemente y el Barakaldo en el campo de Arbuyo.",1,"bodas-de-oro"]
+  ["1980","Cincuenta años de club","El club celebra sus cincuenta años con un cross popular, dantzaris y un partido entre el Bilbao Athletic de Javier Clemente y el Barakaldo en el campo de Arbuyo.",1,"bodas-de-oro"],
+  ["1983","El campo, bajo el agua","El 26 de agosto de 1983 el Kadagua se desborda y el campo de Arbuyo queda bajo el agua.",0,"riada-1983"]
  ];
  const capDe={"1971": "anos-70", "1916": "rica", "1929": "fundacion", "1930": "anos-30", "1932": "anos-30", "1936": "fundacion", "1959": "reaparicion", "1960": "reaparicion", "1965": "anos-60", "1967": "ascenso", "1969": "pachuco-prats"};
  const capT=id=>{const e=document.querySelector('#'+id+' .ct');return e?e.textContent:''};
@@ -2764,15 +2796,16 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
  const ruta=()=>{
   const h=location.hash.slice(1);
   const hist=h==='historia-completa'||isCap(h);
-  const soc=h==='hazte-socio',pat=h==='patrocinar',cro=h==='cromos',leg=h==='aviso-legal',bal=h==='dona-balon';
+  const soc=h==='hazte-socio',pat=h==='patrocinar',cro=h==='cromos',leg=h==='aviso-legal',bal=h==='dona-balon',ins=h==='instalaciones';
   document.body.classList.toggle('vh',hist);
   document.body.classList.toggle('vs',soc);
   document.body.classList.toggle('vp',pat);
   document.body.classList.toggle('vc',cro);
   document.body.classList.toggle('vl',leg);
   document.body.classList.toggle('vb',bal);
+  document.body.classList.toggle('vn',ins);
   if(hist){show(isCap(h)?h:caps[0].id);window.scrollTo(0,0);}
-  else if(soc||pat||cro||leg||bal){window.scrollTo(0,0);}
+  else if(soc||pat||cro||leg||bal||ins){window.scrollTo(0,0);}
   else{const el=h&&document.getElementById(h);if(el)el.scrollIntoView();else window.scrollTo(0,0);}
  };
  ruta();
