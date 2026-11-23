@@ -67,6 +67,8 @@ nav .wrap{display:flex;align-items:center;gap:20px;min-height:60px;flex-wrap:wra
 .hero .sub{font-size:clamp(18px,2vw,22px);font-weight:600;max-width:30ch;margin-top:12px;color:#123826}
 /* ORDENADOR (desde 1100 px): la portada se ve siempre como a 1100 px, que es como le gusta al club: escudo encima de la portería y título sin tocar la fábrica. El dibujo no se agranda; se queda a tamaño real y se coloca 205 px a la izquierda del texto. El escudo, el título y el botón del balón tienen tamaño fijo. A los lados solo se alargan cielo, montes y césped. */
 @media(min-width:1100px){.hero .fig svg{position:absolute;bottom:0;left:calc(max(0px,(100% - 1240px)/2) + 5vw - 205px);width:1400px;height:640px;overflow:visible}.hero .txt{padding-top:77px;min-height:640px}.hero h1{font-size:121px}.hero .sub{font-size:22px}.hero .tit{gap:33px}.hero .escudo{width:154px}.hero .balon-cta{right:calc(100% - 5vw - 990px)}}
+/* MÓVIL (hasta 480 px): la portada se ve igual que a 481 px, a escala del ancho del teléfono (escudo al lado del título, fábrica a la derecha). El texto se maqueta a 481 px y un script le pone zoom = ancho/481; el dibujo va en vw con las mismas proporciones. */
+@media(max-width:480px){.hero .fig svg{position:absolute;bottom:0;left:-52.4vw;width:204.8vw;height:93.6vw;overflow:visible}.hero .txt{width:481px;max-width:none;padding:40px 24px 8px}.hero .tit{flex-direction:row;align-items:center;gap:16px}.hero .escudo{width:96px}.hero h1{font-size:64px}.hero .sub{font-size:18px}}
 /* entrada + centenario */
 .strip{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:24px;align-items:stretch}
 .ticket{display:grid;grid-template-columns:minmax(0,1fr) auto;background:var(--card);border:2px solid var(--green);border-radius:6px;position:relative}
@@ -644,7 +646,7 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
     <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3f9a5e"/><stop offset="1" stop-color="#1f7442"/></linearGradient>
     <pattern id="stripes" width="140" height="40" patternUnits="userSpaceOnUse"><rect width="70" height="40" fill="#fff" opacity=".07"/></pattern>
    </defs>
-   <rect x="-1800" width="5000" height="640" fill="url(#sky)"/>
+   <rect x="-1800" y="-1500" width="5000" height="1500" fill="#cfe7f2"/><rect x="-1800" width="5000" height="640" fill="url(#sky)"/>
    <circle cx="1140" cy="120" r="54" fill="#fff6d8"/>
    <path d="M-1800 300C-1200 250 -600 360 0 330C160 250 300 270 430 230S700 170 860 230 1150 200 1400 250C1800 300 2500 220 3200 270V640H-1800z" fill="#a9cfb6"/>
    <path d="M-1800 360C-1100 310 -500 400 0 380C200 320 330 360 520 300S860 280 1000 330 1260 300 1400 330C1900 370 2500 300 3200 340V640H-1800z" fill="#7db592"/>
@@ -2775,6 +2777,9 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
  };
  ruta();
  addEventListener('hashchange',ruta);
+ /* Móvil: la portada a escala del ancho (ver CSS «MÓVIL (hasta 480 px)») */
+ const zoomPortada=()=>{const t=document.querySelector('.hero .txt'),w=document.documentElement.clientWidth;t.style.zoom=w<=480?String(w/481):''};
+ zoomPortada();addEventListener('resize',zoomPortada);
 
  const shot=(ok,i)=>`<i class="${ok?'g':'f'}" title="Lanzamiento ${i+1}">${ok?'✓':'✕'}</i>`;
  document.getElementById('sa').innerHTML=[0,1,1,1,1].map(shot).join('');
