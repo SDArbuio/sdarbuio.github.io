@@ -252,7 +252,16 @@ blockquote{margin:12px 0;padding:0;font-style:italic}
 .escudo{width:clamp(96px,14vw,180px);height:auto;flex:none;filter:drop-shadow(0 6px 10px rgba(11,61,35,.3))}
 @media(max-width:480px){.tit{flex-direction:column;align-items:flex-start}}
 .foto{margin:24px auto;max-width:540px}
-.racha{list-style:none;padding:0;margin:0 0 14px}.racha li{padding:3px 0 3px 14px;border-left:3px solid var(--green);margin:4px 0;font-weight:600}
+.racha-box{border:2px solid var(--green);border-radius:8px;overflow:hidden;background:var(--card);align-self:start}
+.racha-box .rb-h{background:var(--green);color:#fff;padding:10px 14px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;align-items:baseline}
+.racha-box .rb-h b{font-family:"Big Shoulders Display",Impact,sans-serif;font-size:22px;letter-spacing:.01em}
+.racha-box .rb-h span{font-size:13px;opacity:.9}
+.racha-box ol{list-style:none;margin:0;padding:4px 14px}
+.racha-box li{display:flex;align-items:baseline;gap:12px;padding:8px 0;border-bottom:1px solid var(--line);font-size:16px}
+.racha-box li:last-child{border-bottom:0}
+.racha-box .rb-f{flex:none;width:62px;color:var(--soft);font-size:14px}
+.racha-box li b{color:var(--green)}
+.racha-box .rb-p{background:var(--green2);padding:8px 14px;font-weight:700;font-size:14px;border-top:1px solid var(--line)}
 .galeria{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:24px 0}
 .galeria .foto{margin:0;max-width:none}
 @media(max-width:560px){.galeria{grid-template-columns:minmax(0,1fr)}}
@@ -2115,13 +2124,14 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
     <figcaption>Puesto del Arbuyo en la clasificación, según las tablas que publicaba el Hierro cada lunes. Las dos primeras plazas daban el ascenso.</figcaption>
    </figure>
    <div class="desc-sent">
-    <div>
-    <p>La racha empezó el 10 de noviembre y duró hasta Reyes:</p>
-    <ul class="racha"><li>Arbuyo 2-1 Gordejuela</li><li>Arbuyo 5-0 Sopuerta</li><li>General Eléctrica 0-2 Arbuyo</li><li>Arbuyo 5-0 Dinamo de San Juan</li><li>Irala 1-2 Arbuyo</li><li>Arbuyo 3-2 Ecuador Avis</li><li>Retuerto 1-2 Arbuyo</li></ul>
-    <p>De esos siete partidos el Hierro solo publicó la crónica del último; de los demás dio únicamente el resultado. Ni siquiera la derrota del 12 de enero en Aranguren (4-3) le quitó el segundo puesto: en la clasificación del lunes 13 el Arbuyo tenía 20 puntos, los mismos que el Retuerto, que llevaba un partido menos, y uno menos que el líder, el Acero. Con 37 goles, era además el equipo más goleador del grupo.</p>
+    <div class="racha-box">
+     <div class="rb-h"><b>Siete victorias seguidas</b><span>10 nov. 1974 - 6 ene. 1975</span></div>
+     <ol><li><span class="rb-f">10 nov.</span><span><b>Arbuyo</b> 2-1 Gordejuela</span></li><li><span class="rb-f">1 dic.</span><span><b>Arbuyo</b> 5-0 Sopuerta</span></li><li><span class="rb-f">8 dic.</span><span>General Eléctrica 0-2 <b>Arbuyo</b></span></li><li><span class="rb-f">15 dic.</span><span><b>Arbuyo</b> 5-0 Dinamo de San Juan</span></li><li><span class="rb-f">22 dic.</span><span>Irala 1-2 <b>Arbuyo</b></span></li><li><span class="rb-f">29 dic.</span><span><b>Arbuyo</b> 3-2 Ecuador Avis</span></li><li><span class="rb-f">6 ene.</span><span>Retuerto 1-2 <b>Arbuyo</b></span></li></ol>
+     <div class="rb-p">21 goles a favor y 5 en contra</div>
     </div>
     <figure class="foto" style="max-width:360px"><a href="fotos/hierro-1975-01-13-clasificacion.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1975-01-13-clasificacion.jpg" alt="Clasificación de Segunda Regional en el diario Hierro: Acero 21 puntos, Arbuyo 20 y Retuerto 20" width="722" height="766" loading="lazy"></a><figcaption>La clasificación tras la jornada del 12 de enero: el Arbuyo, segundo. Hierro, 13 de enero de 1975.</figcaption></figure>
    </div>
+   <p>De esos siete partidos el Hierro solo publicó la crónica del último; de los demás dio únicamente el resultado. Ni siquiera la derrota del 12 de enero en Aranguren (4-3) le quitó el segundo puesto: en la clasificación del lunes 13 el Arbuyo tenía 20 puntos, los mismos que el Retuerto, que llevaba un partido menos, y uno menos que el líder, el Acero. Con 37 goles, era además el equipo más goleador del grupo.</p>
    <p>Fueron las semanas de los grandes partidos. El 6 de enero, un lunes festivo, ganó en el campo del Retuerto, con el que estaba considerado el gran favorito al ascenso, y dos semanas después empató con el Acero en un partido por el liderato.</p>
    <div class="rec-grid">
     <article class="rcard">
