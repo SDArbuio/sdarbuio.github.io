@@ -62,11 +62,11 @@ nav .wrap{display:flex;align-items:center;gap:20px;min-height:60px;flex-wrap:wra
 .hero{position:relative;background:#bfe0cf;color:#0b1a12;overflow:hidden}
 .hero .fig{position:absolute;inset:0}
 .hero .fig svg{width:100%;height:100%;display:block}
-/* En pantallas grandes el dibujo no se agranda: se queda a tamaño real y se mueve con el texto, para que el escudo quede siempre sobre la portería y el título no pise la fábrica. El cielo, los montes y el césped siguen a los lados. */
-@media(min-width:1280px){.hero .fig svg{position:absolute;bottom:0;left:calc(50% - 764px + 5vw);width:1400px;height:640px;overflow:visible}}
 .hero .txt{position:relative;padding:clamp(40px,7vw,96px) max(5vw,16px) 0;min-height:clamp(440px,62vw,640px)}
 .hero h1{font-size:clamp(64px,11vw,148px);font-weight:900;color:#0b3d23}
 .hero .sub{font-size:clamp(18px,2vw,22px);font-weight:600;max-width:30ch;margin-top:12px;color:#123826}
+/* ORDENADOR (desde 1100 px): la portada se ve siempre como a 1100 px, que es como le gusta al club: escudo encima de la portería y título sin tocar la fábrica. El dibujo no se agranda; se queda a tamaño real y se coloca 205 px a la izquierda del texto. El escudo, el título y el botón del balón tienen tamaño fijo. A los lados solo se alargan cielo, montes y césped. */
+@media(min-width:1100px){.hero .fig svg{position:absolute;bottom:0;left:calc(max(0px,(100% - 1240px)/2) + 5vw - 205px);width:1400px;height:640px;overflow:visible}.hero .txt{padding-top:77px;min-height:640px}.hero h1{font-size:121px}.hero .sub{font-size:22px}.hero .tit{gap:33px}.hero .escudo{width:154px}.hero .balon-cta{right:calc(100% - 5vw - 990px)}}
 /* entrada + centenario */
 .strip{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:24px;align-items:stretch}
 .ticket{display:grid;grid-template-columns:minmax(0,1fr) auto;background:var(--card);border:2px solid var(--green);border-radius:6px;position:relative}
@@ -649,7 +649,7 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
    <path d="M-1800 300C-1200 250 -600 360 0 330C160 250 300 270 430 230S700 170 860 230 1150 200 1400 250C1800 300 2500 220 3200 270V640H-1800z" fill="#a9cfb6"/>
    <path d="M-1800 360C-1100 310 -500 400 0 380C200 320 330 360 520 300S860 280 1000 330 1260 300 1400 330C1900 370 2500 300 3200 340V640H-1800z" fill="#7db592"/>
    <!-- fábrica RICA -->
-   <g transform="translate(950 228)">
+   <g transform="translate(860 228)">
     <rect x="70" y="-110" width="26" height="200" fill="#8a4a3c"/>
     <rect x="66" y="-118" width="34" height="12" fill="#6e3a2f"/>
     <rect x="96" y="-110" width="6" height="200" fill="#6e3a2f"/>
@@ -658,7 +658,7 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
     <g fill="#f3e2b8"><rect x="20" y="70" width="18" height="24"/><rect x="70" y="70" width="18" height="24"/><rect x="120" y="70" width="18" height="24"/><rect x="170" y="70" width="18" height="24"/><rect x="220" y="70" width="18" height="24"/><rect x="270" y="70" width="18" height="24"/></g>
     <text x="150" y="60" text-anchor="middle" font-family="Big Shoulders Display,sans-serif" font-weight="900" font-size="22" fill="#f3e2b8">RICA</text>
    </g>
-   <circle cx="1034" cy="96" r="22" fill="#fff" opacity=".55"/><circle cx="1065" cy="70" r="30" fill="#fff" opacity=".45"/><circle cx="1105" cy="40" r="36" fill="#fff" opacity=".35"/>
+   <circle cx="944" cy="96" r="22" fill="#fff" opacity=".55"/><circle cx="975" cy="70" r="30" fill="#fff" opacity=".45"/><circle cx="1015" cy="40" r="36" fill="#fff" opacity=".35"/>
    <!-- campo -->
    <path d="M-1800 491L3200 349V640H-1800z" fill="url(#grass)"/>
    <path d="M-1800 491L3200 349V640H-1800z" fill="url(#stripes)"/>
