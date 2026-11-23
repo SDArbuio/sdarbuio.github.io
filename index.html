@@ -443,6 +443,24 @@ body.vs #hazte-socio,body.vh #capitulos{flex:1 0 auto;width:100%}
 .balon-cta:hover .bc-bola,.balon-cta:focus-visible .bc-bola{transform:rotate(360deg)}
 @media(max-width:700px){.balon-cta{position:relative;right:auto;bottom:auto;margin:0 0 30px;transform:rotate(1deg)}}
 @media(prefers-reduced-motion:reduce){.balon-cta .bc-bola{transition:none}}
+/* VISOR DE FOTOS Y RECORTES: al pinchar una foto se abre en grande; pinchando otra vez se ve a tamaño real */
+figure img{cursor:zoom-in}
+.lb{position:fixed;inset:0;z-index:10000;background:rgba(6,14,10,.97);display:flex;flex-direction:column}
+.lb[hidden]{display:none}
+.lb-area{flex:1;min-height:0;overflow:auto;display:flex;align-items:center;justify-content:center;padding:56px 56px 8px;-webkit-overflow-scrolling:touch}
+.lb-area img{max-width:100%;max-height:100%;object-fit:contain;cursor:zoom-in;background:#fff;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.lb.zoom .lb-area{align-items:flex-start;justify-content:flex-start}
+.lb.zoom .lb-area img{max-width:none;max-height:none;cursor:zoom-out;margin:auto}
+.lb-cap{color:#e9f1ec;font-size:15px;line-height:1.45;padding:10px 64px 16px;text-align:center;max-width:900px;margin:0 auto}
+.lb-cap small{display:block;opacity:.7;font-size:13px;margin-top:4px}
+.lb button{position:absolute;border:0;background:rgba(255,255,255,.14);color:#fff;width:46px;height:46px;border-radius:50%;font:700 24px/46px system-ui,sans-serif;cursor:pointer;display:grid;place-items:center;padding:0}
+.lb button:hover,.lb button:focus-visible{background:rgba(255,255,255,.3);outline:none}
+.lb .lb-x{top:10px;right:10px}
+.lb .lb-p{left:10px;top:50%;transform:translateY(-50%)}
+.lb .lb-n{right:10px;top:50%;transform:translateY(-50%)}
+.lb .lb-p[hidden],.lb .lb-n[hidden]{display:none}
+@media(max-width:600px){.lb-area{padding:56px 8px 8px}.lb-cap{padding:8px 12px 14px;font-size:14px}.lb .lb-p,.lb .lb-n{top:auto;bottom:12px;transform:none}}
+body.lb-open{overflow:hidden}
 body:not(.vn) #instalaciones{display:none}
 body.vn .hero,body.vn .centb,body.vn section:not(#instalaciones){display:none}
 body.vn{display:flex;flex-direction:column;min-height:100vh;min-height:100dvh}
@@ -2754,6 +2772,13 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
  </div>
 </footer>
 
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Foto ampliada">
+ <div class="lb-area" id="lb-area"><img id="lb-img" alt=""></div>
+ <div class="lb-cap" id="lb-cap"></div>
+ <button class="lb-x" id="lb-x" aria-label="Cerrar">×</button>
+ <button class="lb-p" id="lb-p" aria-label="Foto anterior">‹</button>
+ <button class="lb-n" id="lb-n" aria-label="Foto siguiente">›</button>
+</div>
 <script>
 {
  /* TEMPORADA 2026-27 · Tercera División (3A) Grupo 1 · Federación Vizcaína
@@ -3011,6 +3036,35 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
    $('b-paso').hidden=$('b-mail').hidden=ENVIO.activo;
    f.hidden=true;$('b-gracias').hidden=false;$('b-gracias').focus();
   });
+ }
+
+
+ /* VISOR DE FOTOS: cualquier foto o recorte dentro de un <figure> se abre en grande al pincharla.
+    Dentro del visor: pinchar la imagen = ampliarla (al menos el doble) y moverse por ella; flechas o ‹ › = foto anterior/siguiente del mismo capítulo; Esc o × = cerrar. */
+ {
+  const lb=document.getElementById('lb'),area=document.getElementById('lb-area'),im=document.getElementById('lb-img'),cap=document.getElementById('lb-cap'),bp=document.getElementById('lb-p'),bn=document.getElementById('lb-n');
+  let lista=[],pos=0,antes=null;
+  const fuente=img=>{const a=img.closest('a[href]');return a&&/\.(jpe?g|png|webp|gif)(\?|$)/i.test(a.getAttribute('href'))?a.getAttribute('href'):(img.currentSrc||img.getAttribute('src'))};
+  const pie=img=>{const f=img.closest('figure');const fc=f&&f.querySelector('figcaption');return fc?fc.innerHTML:(img.alt||'')};
+  const ver=()=>{const img=lista[pos];lb.classList.remove('zoom');im.style.width='';im.src=fuente(img);im.alt=img.alt||'';
+   cap.innerHTML=pie(img)+(lista.length>1?`<small>${pos+1} de ${lista.length} · pincha la imagen para ampliarla</small>`:'<small>Pincha la imagen para ampliarla</small>');
+   bp.hidden=bn.hidden=lista.length<2;area.scrollTo(0,0)};
+  const abrir=img=>{const grupo=img.closest('article.cap, section')||document.body;
+   lista=[...grupo.querySelectorAll('figure img')].filter(x=>x.offsetParent!==null||x===img);pos=Math.max(0,lista.indexOf(img));
+   antes=document.activeElement;lb.hidden=false;document.body.classList.add('lb-open');ver();document.getElementById('lb-x').focus()};
+  const cerrar=()=>{lb.hidden=true;document.body.classList.remove('lb-open');im.removeAttribute('src');if(antes&&antes.focus)antes.focus()};
+  const mover=d=>{if(lista.length<2)return;pos=(pos+d+lista.length)%lista.length;ver()};
+  document.addEventListener('click',e=>{const img=e.target.closest('figure img');if(!img||lb.contains(img))return;e.preventDefault();abrir(img)});
+  im.addEventListener('click',e=>{e.stopPropagation();const zoom=!lb.classList.contains('zoom');
+   const r=im.getBoundingClientRect(),fx=(e.clientX-r.left)/r.width,fy=(e.clientY-r.top)/r.height;
+   im.style.width=zoom?Math.round(Math.max(im.naturalWidth,r.width*2.2))+'px':'';lb.classList.toggle('zoom',zoom);
+   if(zoom)requestAnimationFrame(()=>area.scrollTo(fx*area.scrollWidth-area.clientWidth/2,fy*area.scrollHeight-area.clientHeight/2))});
+  area.addEventListener('click',e=>{if(e.target===area)cerrar()});
+  document.getElementById('lb-x').addEventListener('click',cerrar);
+  bp.addEventListener('click',()=>mover(-1));bn.addEventListener('click',()=>mover(1));
+  document.addEventListener('keydown',e=>{if(lb.hidden)return;if(e.key==='Escape')cerrar();else if(e.key==='ArrowLeft')mover(-1);else if(e.key==='ArrowRight')mover(1)});
+  let tx=null;area.addEventListener('touchstart',e=>{tx=e.touches.length===1&&!lb.classList.contains('zoom')?e.touches[0].clientX:null},{passive:true});
+  area.addEventListener('touchend',e=>{if(tx===null)return;const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>60)mover(dx<0?1:-1);tx=null},{passive:true});
  }
 
  /* PATROCINAR: formulario para empresas (usa el mismo ENVIO que el de socios) */
