@@ -319,6 +319,15 @@ blockquote{margin:12px 0;padding:0;font-style:italic}
 .cb .xi.al li{padding:6px 0;border-bottom:1px dashed var(--line)}
 .cb p{font-size:16px}
 .foto.peq{max-width:380px}
+.medallas{margin:30px auto;max-width:640px;padding:26px 22px 18px;border-radius:12px;background:radial-gradient(circle at 50% 30%,#1d6b43,#0b3a22);box-shadow:inset 0 0 40px rgba(0,0,0,.45),0 2px 0 var(--line);clear:both}
+.medallas .par{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+.medallas figure{margin:0;text-align:center}
+.medallas img{display:block;width:100%;max-width:240px;height:auto;margin:0 auto;border-radius:50%;filter:drop-shadow(0 9px 10px rgba(0,0,0,.55));transition:transform .35s}
+.medallas img:hover{transform:rotate(-7deg) scale(1.04)}
+.medallas figcaption{margin-top:10px;font:800 14px/1.2 "Big Shoulders Display",Impact,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#e0c97f}
+.medallas .med-txt{margin:18px 0 0;padding-top:12px;border-top:1px solid rgba(255,255,255,.22);text-align:center;font-size:15px;line-height:1.45;color:#eef5f0}
+.medallas .med-txt b{display:block;font:800 17px/1.3 "Big Shoulders Display",Impact,sans-serif;letter-spacing:.05em;text-transform:uppercase;color:#fff;margin-bottom:4px}
+.medallas .med-txt i{color:#cfe3d6}
 .entrevista .mini{margin-top:4px}
 .mt.sinl{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)}
 .campeon{text-align:center;font-size:15px;padding:8px 16px;border-bottom:1px solid var(--line)}
@@ -453,6 +462,7 @@ figure img{cursor:zoom-in}
 .lb[hidden]{display:none}
 .lb-area{flex:1;min-height:0;overflow:auto;display:flex;align-items:center;justify-content:center;padding:56px 56px 8px;-webkit-overflow-scrolling:touch}
 .lb-area img{max-width:100%;max-height:100%;object-fit:contain;cursor:zoom-in;background:#fff;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.lb-area img[src$=".png"]{background:transparent;box-shadow:none}
 .lb.zoom .lb-area{align-items:flex-start;justify-content:flex-start}
 .lb.zoom .lb-area img{max-width:none;max-height:none;cursor:zoom-out;margin:auto}
 .lb-cap{color:#e9f1ec;font-size:15px;line-height:1.45;padding:10px 64px 16px;text-align:center;max-width:900px;margin:0 auto}
@@ -870,6 +880,13 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
    <p>El equipo en principio se llamó ARBUYO FUTBOL BALOMPIE CLUB, y su indumentaria (que fue confeccionada por empleadas de la fábrica RICA S.A.) estaba formada por camiseta de color verde con bolsillo rojo, pantalón negro y medias rojas. Los colores oficiales del club eran rojo, verde y blanco.</p>
    <p>El ARBUYO FBC se proclamaría campeón de Vizcaya de la serie C en su primer año de competición, jugando la semifinal contra el Deusto, al que venció por 2 a 1, y jugando la final contra el Neguri, al que derrotó por 1 a 0 en el antiguo campo de fútbol de Lamiako.</p>
    <figure class="foto peq" style="max-width:304px"><img src="fotos/trofeo-serie-c-1930.jpg?v=2" alt="Copa plateada con asas y peana negra: el primer trofeo del Arbuyo, campeón de Bizkaia de la serie C" width="712" height="996" loading="lazy"><figcaption>El primer trofeo del Arbuyo: la copa de campeón de Bizkaia de la serie C, ganada en su primera temporada, 1929-30.</figcaption></figure>
+   <div class="medallas">
+    <div class="par">
+     <figure><img src="fotos/medalla-1930-anverso.png" alt="Anverso de la medalla: F.V.F. Campeonato 3.ª Categoría Ordinaria, Club Deportivo Arbuyo, 1929-30" width="560" height="560" loading="lazy"><figcaption>Anverso</figcaption></figure>
+     <figure><img src="fotos/medalla-1930-reverso.png" alt="Reverso de la medalla: dos futbolistas en relieve disputando el balón" width="560" height="560" loading="lazy"><figcaption>Reverso</figcaption></figure>
+    </div>
+    <p class="med-txt"><b>Medalla de la Federación Vizcaína de Fútbol</b>Conmemorativa del Campeonato de Bizkaia de la serie «C», temporada 1929-1930.<br><i>Grabado en el anverso: «F.V.F. · Campeonato 3.ª Categoría Ordinaria · Club Deportivo Arbuyo · 1929-30».</i></p>
+   </div>
    <p>Su andadura sin embargo fue muy breve; solo participó en competiciones 6 años. En el año 1936, y por causa de la Guerra Civil española, estos entusiastas y buenos jugadores se vieron en la necesidad de dejar el fútbol; ninguno de ellos volvió a jugar en el Arbuyo. El club y el campo de fútbol desaparecieron y así el Arbuyo estuvo sin competir nada menos que 24 años.</p>
    <p class="nota"><b>Fundadores:</b> Otxoa, Isasi, Blanquillo, Batanero, Pérez, Otola, Menchaca, Inchausti, Eguren, Barrios, Lafuente, entre otros.</p>
    <h4>Partido inaugural (año 1929)</h4>
@@ -900,6 +917,13 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
     </tbody>
    </table></div>
    <figure class="foto peq" style="max-width:304px"><img src="fotos/trofeo-serie-c-1930.jpg?v=2" alt="Copa plateada con asas y peana negra: el primer trofeo del Arbuyo, campeón de Bizkaia de la serie C" width="712" height="996" loading="lazy"><figcaption>El primer trofeo del Arbuyo: la copa de campeón de Bizkaia de la serie C, ganada en su primera temporada, 1929-30.</figcaption></figure>
+   <div class="medallas">
+    <div class="par">
+     <figure><img src="fotos/medalla-1930-anverso.png" alt="Anverso de la medalla: F.V.F. Campeonato 3.ª Categoría Ordinaria, Club Deportivo Arbuyo, 1929-30" width="560" height="560" loading="lazy"><figcaption>Anverso</figcaption></figure>
+     <figure><img src="fotos/medalla-1930-reverso.png" alt="Reverso de la medalla: dos futbolistas en relieve disputando el balón" width="560" height="560" loading="lazy"><figcaption>Reverso</figcaption></figure>
+    </div>
+    <p class="med-txt"><b>Medalla de la Federación Vizcaína de Fútbol</b>Conmemorativa del Campeonato de Bizkaia de la serie «C», temporada 1929-1930.<br><i>Grabado en el anverso: «F.V.F. · Campeonato 3.ª Categoría Ordinaria · Club Deportivo Arbuyo · 1929-30».</i></p>
+   </div>
    <h4>Primeros pasos en Segunda Regional</h4>
    <p>Tras el ascenso del ARBUYO FUTBOL BALOMPIE CLUB en su primer año, al equipo aún le queda un duro camino por delante para poder competir de tú a tú con equipos consolidados en Segunda Regional Vizcaína, como serían en su momento el Zalla U.C. y el Balmaseda C.F., entre otros.</p>
    <p>El primer partido de este nuevo reto se jugó un 4 de octubre de 1931 en el barrio de Arbuyo. Fue contra el Sopuerta y el equipo se logró imponer con un resultado de 3-2. Fue un buen comienzo para el Arbuyo Futbol Balompié Club, pero el camino no sería nada fácil para el recién ascendido. Al término de la temporada, el Arbuyo quedaría en un discreto 4º puesto, pero la aventura no había hecho más que empezar. En esta campaña se consiguieron 3 victorias ante el Sopuerta, Balmaseda y Somorrostro, un empate y 6 derrotas.</p>
