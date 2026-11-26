@@ -566,9 +566,11 @@ body.vc #cromos{flex:1 0 auto;width:100%;background:repeating-linear-gradient(90
 .cromo2.vacio span{font-size:13px;opacity:.85}
 .alb-nota{color:#fff;text-align:center;margin:22px auto 0;opacity:.9}
 @media(max-width:480px){.alb-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
-.curioso{margin:30px 0;padding:16px 18px;border-radius:8px;background:var(--green2);border-left:4px solid var(--red);overflow:hidden}
-.curioso h4{margin-top:0}
-.curioso p{margin-bottom:0}
+.curioso{margin:34px 0;padding:20px 24px 22px;border-radius:10px;background:light-dark(#fdf1f1,#2a1316);border:2px solid var(--red);border-left:10px solid var(--red);clear:both}
+.curioso .ck{display:inline-block;margin:0 0 8px;padding:3px 12px;border-radius:999px;background:var(--red);color:#fff;font:800 15px/1.3 "Big Shoulders Display",Impact,sans-serif;letter-spacing:.06em;text-transform:uppercase}
+.cap .curioso h4{margin:0 0 10px;font-size:28px;color:light-dark(#b51d25,#ff8a8f)}
+.curioso p:last-child,.curioso .desc-sent{margin-bottom:0}
+.curioso .desc-sent{margin-top:4px}
 .llamada{margin:28px 0;padding:18px 20px;border:2px dashed var(--green);border-radius:10px;text-align:center}
 .llamada h4{margin:0 0 6px}
 .llamada p{margin:0 auto;text-align:center}
@@ -978,8 +980,12 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
     <p style="min-height:150px"><strong>Presidente: Silvino López</strong>, el primer presidente del club tras la reaparición.</p>
     <figure class="mini" style="clear:both"><img src="fotos/abeijon.jpg" alt="Retrato de Juan Ramón Abeijón Castro, Abeijón, entrenador del Arbuyo en 1961-62" width="135" height="205" loading="lazy"><figcaption>Abeijón</figcaption></figure>
     <p style="clear:none"><strong>Entrenador: Juan Ramón Abeijón Castro, «Abeijón».</strong> Gallego de Noia, había sido portero profesional, y nada menos que en <strong>Primera División</strong>: defendió la portería del <strong>Espanyol</strong> en la temporada 1948-49. En Segunda División jugó en el Barakaldo, donde debutó en 1943-44, el Salamanca, el Badajoz y el Indautxu, en el que se retiró en 1957. Murió en 2008.</p>
-    <p style="clear:both"><strong>Una curiosidad.</strong> En la temporada 1946-47, en Segunda División, el Betis ganó 3-2 al Baracaldo en Sevilla. En la portería del Baracaldo estaba Abeijón, y en el banquillo, como entrenador, Manuel Prats Guerendiain, «Pachuco». Años después, en 1969, el Arbuyo ganaría el <a href="#pachuco-prats">Torneo Pachuco Prats</a> que organizó el Barakaldo en su honor.</p>
-    <p><strong>Jugadores (según la foto del equipo):</strong> Sanchoyerno, Garma, Lolo, Juanjo, Castro, Aspe, García «Pegaso», Bullón, Pío López, Soira, Meana, Marcel López, Oria y José. Masajista: Felipe.</p>
+    <p style="clear:both"><strong>Jugadores (según la foto del equipo):</strong> Sanchoyerno, Garma, Lolo, Juanjo, Castro, Aspe, García «Pegaso», Bullón, Pío López, Soira, Meana, Marcel López, Oria y José. Masajista: Felipe.</p>
+   </aside>
+   <aside class="curioso" aria-label="Curiosidad: Abeijón y Pachuco Prats">
+    <p class="ck">Curiosidad</p>
+    <h4>Abeijón y «Pachuco» Prats</h4>
+    <p>En la temporada 1946-47, en Segunda División, el Betis ganó 3-2 al Baracaldo en Sevilla. En la portería del Baracaldo estaba Abeijón, y en el banquillo, como entrenador, Manuel Prats Guerendiain, «Pachuco». Años después, en 1969, el Arbuyo ganaría el <a href="#pachuco-prats">Torneo Pachuco Prats</a> que organizó el Barakaldo en su honor.</p>
    </aside>
    <p>El estreno fue duro: cuatro derrotas seguidas (3-1 en Ortuella, 1-3 con el Somorrostro, 1-0 en Begoña y 6-1 en el campo del San Pedro). La primera victoria llegó el 22 de octubre de 1961, 4-2 al Lejona en Arbuyo. Después vinieron un 6-2 en Burceña, un empate con el Sodupe, una victoria por 3-1 sobre el Aranguren, otro empate en el campo del Moraza y dos derrotas, 4-2 en Retuerto y 5-1 en San Ignacio. El último día del año el Arbuyo ganó 2-1 al Ortuella, y a mediados de enero, tras ganar 2-0 al Begoña, era décimo, con cuatro victorias.</p>
    <p>Lo mejor llegó en febrero: tras perder 0-1 con el San Pedro, el Arbuyo logró en Lejona su mayor goleada de la liga, 1-6, y empató 2-2 con el Burceña, uno de los equipos de arriba. Luego perdió en Zorroza (3-0), ganó 2-0 al Retuerto y cerró la liga con dos derrotas, 1-0 en Sodupe y 7-3 en Aranguren. El partido de la última jornada, Arbuyo-Moraza, no se jugó. El Arbuyo terminó undécimo, con 7 victorias, 3 empates y 15 derrotas. El Somorrostro fue campeón por un punto sobre el Zorroza, y el Zorroza y el San Pedro jugaron la promoción.</p>
@@ -1842,12 +1848,16 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
      </div>
     </article>
    </div>
-   <div class="desc-sent">
-    <div>
-     <p><b>Una curiosidad.</b> En diciembre de 1970 la misma sección habló de Marcelino Gutiérrez Díaz, goleador del San Ignacio, nacido en Guriezo (Cantabria). Había empezado en el fútbol como portero del juvenil del Arbuyo, donde estuvo una temporada. Luego pasó al juvenil del Arenas y allí, sin sitio en la portería y con falta de delanteros, le pusieron a jugar de delantero centro. Desde entonces dejó los guantes y se hizo goleador.</p>
+   <aside class="curioso" aria-label="Curiosidad: Marcelino, de la portería al gol">
+    <p class="ck">Curiosidad</p>
+    <h4>Marcelino, de la portería al gol</h4>
+    <div class="desc-sent">
+     <div>
+      <p>En diciembre de 1970 la misma sección habló de Marcelino Gutiérrez Díaz, goleador del San Ignacio, nacido en Guriezo (Cantabria). Había empezado en el fútbol como portero del juvenil del Arbuyo, donde estuvo una temporada. Luego pasó al juvenil del Arenas y allí, sin sitio en la portería y con falta de delanteros, le pusieron a jugar de delantero centro. Desde entonces dejó los guantes y se hizo goleador.</p>
+     </div>
+     <figure class="foto" style="max-width:170px"><a href="fotos/hierro-1970-12-09-marcelino.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-12-09-marcelino.jpg" alt="Recorte del diario Hierro con el perfil de Marcelino, del San Ignacio" width="196" height="602" loading="lazy"></a><figcaption>Hierro, 9 de diciembre de 1970.</figcaption></figure>
     </div>
-    <figure class="foto" style="max-width:170px"><a href="fotos/hierro-1970-12-09-marcelino.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1970-12-09-marcelino.jpg" alt="Recorte del diario Hierro con el perfil de Marcelino, del San Ignacio" width="196" height="602" loading="lazy"></a><figcaption>Hierro, 9 de diciembre de 1970.</figcaption></figure>
-   </div>
+   </aside>
 
    <h4>Una primavera muy larga</h4>
    <p>La primavera se le hizo larga al equipo. Un 3-5 en casa ante el Ermua y las derrotas en Moraza, Portugalete, Gernika y Zamudio dejaron al Arbuyo sin margen.</p>
@@ -2345,21 +2355,28 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
    </div>
    </details>
 
-   <h4>Una curiosidad: Prado</h4>
-   <div class="desc-sent">
-    <div>
-     <p>En junio de 1976, el Hierro dedicó una ficha a Serafín Prado Villalba, jugador del Estrella de Portugalete. Había nacido en Valverde de la Sierra (León) el 13 de mayo de 1955 y jugaba de medio o de interior. Antes de fichar por el Estrella había pasado por el Portugalete, el Arbuyo y el Basurto.</p>
-     <p>En el Arbuyo de 1972-73 jugaba un Prado, que marcó uno de los goles al Apurtuarte, aunque no sabemos si es el mismo.</p>
+   <aside class="curioso" aria-label="Curiosidad: Prado, del Estrella">
+    <p class="ck">Curiosidad</p>
+    <h4>Prado, del Estrella</h4>
+    <div class="desc-sent">
+     <div>
+      <p>En junio de 1976, el Hierro dedicó una ficha a Serafín Prado Villalba, jugador del Estrella de Portugalete. Había nacido en Valverde de la Sierra (León) el 13 de mayo de 1955 y jugaba de medio o de interior. Antes de fichar por el Estrella había pasado por el Portugalete, el Arbuyo y el Basurto.</p>
+      <p>En el Arbuyo de 1972-73 jugaba un Prado, que marcó uno de los goles al Apurtuarte, aunque no sabemos si es el mismo.</p>
+     </div>
+     <figure class="foto" style="max-width:200px"><a href="fotos/hierro-1976-06-02-prado.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1976-06-02-prado.jpg" alt="Ficha del diario Hierro: Prado, del Estrella, que antes jugó en el Portugalete, el Arbuyo y el Basurto" width="231" height="585" loading="lazy"></a><figcaption>Hierro, 2 de junio de 1976.</figcaption></figure>
     </div>
-    <figure class="foto" style="max-width:200px"><a href="fotos/hierro-1976-06-02-prado.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1976-06-02-prado.jpg" alt="Ficha del diario Hierro: Prado, del Estrella, que antes jugó en el Portugalete, el Arbuyo y el Basurto" width="231" height="585" loading="lazy"></a><figcaption>Hierro, 2 de junio de 1976.</figcaption></figure>
-   </div>
+   </aside>
 
-   <div class="desc-sent">
-    <div>
-     <p><b>Una curiosidad.</b> El 30 de diciembre de 1972, un sábado a las seis y media de la tarde, el Arbuyo jugó en Garellano contra el Basurto. No era un partido cualquiera: el campo bilbaíno acababa de reabrirse y aquel fue el primer partido oficial del «nuevo» Garellano, y además con luz artificial. No hemos encontrado el resultado.</p>
+   <aside class="curioso" aria-label="Curiosidad: Basurto-Arbuyo, estreno del nuevo Garellano">
+    <p class="ck">Curiosidad</p>
+    <h4>Basurto-Arbuyo, estreno del nuevo Garellano</h4>
+    <div class="desc-sent">
+     <div>
+      <p>El 30 de diciembre de 1972, un sábado a las seis y media de la tarde, el Arbuyo jugó en Garellano contra el Basurto. No era un partido cualquiera: el campo bilbaíno acababa de reabrirse y aquel fue el primer partido oficial del «nuevo» Garellano, y además con luz artificial. No hemos encontrado el resultado.</p>
+     </div>
+     <figure class="foto" style="max-width:300px"><a href="fotos/hierro-1972-12-27-garellano.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1972-12-27-garellano.jpg" alt="Noticia del diario Hierro: el sábado, a las 6,30, en Garellano, Basurto-Arbuyo, con luz artificial" width="378" height="335" loading="lazy"></a><figcaption>Hierro, 27 de diciembre de 1972.</figcaption></figure>
     </div>
-    <figure class="foto" style="max-width:300px"><a href="fotos/hierro-1972-12-27-garellano.jpg" target="_blank" rel="noopener"><img src="fotos/hierro-1972-12-27-garellano.jpg" alt="Noticia del diario Hierro: el sábado, a las 6,30, en Garellano, Basurto-Arbuyo, con luz artificial" width="378" height="335" loading="lazy"></a><figcaption>Hierro, 27 de diciembre de 1972.</figcaption></figure>
-   </div>
+   </aside>
 
    <div class="perfiles">
     <article class="perfil">
@@ -2490,9 +2507,9 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
    </div>
    <div class="tsec">
    <h4 class="htemp">1973-74: de vuelta en Segunda</h4>
-   <aside class="homenaje" aria-label="Dato curioso: el Larramendi deja el campo de Arbuyo">
+   <aside class="curioso" aria-label="Curiosidad: el Larramendi deja el campo de Arbuyo">
+    <p class="ck">Curiosidad · octubre de 1973</p>
     <h4>El Larramendi deja el campo de Arbuyo</h4>
-    <p class="hf">Dato curioso · octubre de 1973</p>
     <div class="desc-sent">
      <div>
       <p>Durante muchos años, el campo de Arbuyo fue también la casa del Larramendi, el otro equipo de Alonsotegi. Desde la temporada 1960-61, cuando desapareció su viejo campo de Percheta, jugaba sus partidos en Arbuyo, y allí se disputaron también los derbis entre los dos clubes.</p>
