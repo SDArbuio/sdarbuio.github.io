@@ -444,6 +444,9 @@ footer .mail{color:#fff;font-weight:600}
 .nav-socio{background:var(--red);color:#fff;border-radius:999px;padding:6px 14px!important;border:0!important}
 .nav-socio:hover,.nav-socio:focus-visible{background:#b81e26}
 @media(max-width:700px){.carnet{position:relative;left:auto;bottom:auto;margin:22px 0 30px;transform:rotate(-1.5deg)}.hero .txt{min-height:0;padding-bottom:8px}}
+@media(max-width:700px){.carnet{width:auto}.c-der{padding-right:46px}}
+@media(max-width:700px){.hero .camiseta{transform:translate(-120px,-30px)}}
+@media(max-width:480px){.hero .camiseta{transform:translate(-178px,26px)}}
 body.vs,body.vh{display:flex;flex-direction:column;min-height:100vh;min-height:100dvh}
 body.vs>nav,body.vh>nav,body.vs>footer,body.vh>footer{flex:none;width:100%}
 body.vs #hazte-socio,body.vh #capitulos{flex:1 0 auto;width:100%}
@@ -911,7 +914,7 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
    <!-- balón -->
    <g transform="translate(700 560)"><ellipse cx="0" cy="26" rx="26" ry="6" fill="#0b3d23" opacity=".3"/><g class="ball" style="transform-box:fill-box;transform-origin:center"><circle r="24" fill="#fff"/><path d="M0-9l9 6-3 10H-6l-3-10z" fill="#0b1a12"/><path d="M0-24v15M9-3l13-5M6 7l9 12M-6 7l-9 12M-9-3l-13-5" stroke="#0b1a12" stroke-width="2"/></g></g>
    <!-- camiseta 1929 colgada -->
-   <g transform="translate(1040 430) rotate(-6)"><use href="#shirt" width="120" height="132"/></g>
+   <g class="camiseta"><g transform="translate(1040 430) rotate(-6)"><use href="#shirt" width="120" height="132"/></g></g>
   </svg>
  </div>
  <div class="txt wrap">
