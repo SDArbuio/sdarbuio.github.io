@@ -62,6 +62,8 @@ nav .wrap{display:flex;align-items:center;gap:20px;min-height:60px;flex-wrap:wra
 .hero{position:relative;background:#bfe0cf;color:#0b1a12;overflow:hidden}
 .hero .fig{position:absolute;inset:0}
 .hero .fig svg{width:100%;height:100%;display:block}
+@media(max-width:700px){.hero .txt{display:flex;flex-direction:column;align-items:flex-start}.hero .tit{align-self:stretch}.hero .balon-cta{order:2;margin:22px 0 4px}.hero .carnet{order:3;margin:18px 0 30px}}
+@media(max-width:480px){.hero .ermita{transform:translate(804px,362px) scale(.72)}}
 .hero .txt{position:relative;padding:clamp(40px,7vw,96px) max(5vw,16px) 0;min-height:clamp(440px,62vw,640px)}
 .hero h1{font-size:clamp(64px,11vw,148px);font-weight:900;color:#0b3d23}
 .hero .sub{font-size:clamp(18px,2vw,22px);font-weight:600;max-width:30ch;margin-top:12px;color:#123826}
@@ -727,6 +729,23 @@ a.sp .sp-n:after{content:" ↗";color:#d7262e}
     <path d="M18 8l30 40v80M202 8l-24 40v80M48 48h130" stroke="#e8f2ec" stroke-width="2" fill="none"/>
     <g stroke="#e8f2ec" stroke-width="1" opacity=".7"><path d="M60 48v80M80 48v80M100 48v80M120 48v80M140 48v80M160 48v80M48 68h130M48 88h130M48 108h130"/></g>
     <ellipse cx="110" cy="128" rx="110" ry="8" fill="#0b3d23" opacity=".25"/>
+   </g>
+   <!-- ermita de Arbuio -->
+   <g class="ermita" transform="translate(742 350) scale(.86)">
+    <ellipse cx="60" cy="1" rx="70" ry="5" fill="#0b3d23" opacity=".18"/>
+    <path d="M0 -43L52 -59L121 -43V0H0z" fill="#f7f1e1"/>
+    <rect x="0" y="-17" width="121" height="17" fill="#e6c66e"/>
+    <g fill="#d2a64a"><rect x="0" y="-43" width="6" height="43"/><rect x="83" y="-43" width="6" height="43"/><rect x="115" y="-43" width="6" height="43"/></g>
+    <g fill="#f7f1e1" opacity=".55"><rect x="0" y="-36" width="4" height="4"/><rect x="0" y="-26" width="4" height="4"/><rect x="85" y="-36" width="4" height="4"/><rect x="85" y="-26" width="4" height="4"/><rect x="117" y="-36" width="4" height="4"/><rect x="117" y="-26" width="4" height="4"/></g>
+    <path d="M30 0V-17A16 16 0 0 1 62 -17V0z" fill="#d2a64a"/>
+    <path d="M37 0V-17A9 9 0 0 1 55 -17V0z" fill="#7c3d2c"/>
+    <path d="M92 0V-8A11.5 11.5 0 0 1 115 -8V0z" fill="#6e3a2f"/>
+    <rect x="12" y="-32" width="12" height="15" fill="#d2a64a"/><rect x="14" y="-30" width="8" height="12" fill="#2f6b4f"/>
+    <rect x="66" y="-32" width="12" height="15" fill="#d2a64a"/><rect x="68" y="-30" width="8" height="12" fill="#2f6b4f"/>
+    <rect x="47" y="-45" width="10" height="10" fill="#d2a64a"/><path d="M49.5 -36.5V-41A2.5 2.5 0 0 1 54.5 -41V-36.5z" fill="#6e3a2f"/>
+    <path d="M-8 -40L52 -63L129 -40L129 -35L52 -57L-8 -35z" fill="#8a4a3c"/>
+    <path d="M52 -63V-80M45 -74H59" stroke="#4b5a52" stroke-width="2"/>
+    <g fill="#2b3a33"><rect x="9" y="-22" width="1.6" height="22"/><rect x="7.4" y="-27" width="4.8" height="6" rx="1"/><rect x="80" y="-22" width="1.6" height="22"/><rect x="78.4" y="-27" width="4.8" height="6" rx="1"/></g>
    </g>
    <!-- foco -->
    <g transform="translate(1290 210)"><rect x="-4" y="0" width="8" height="200" fill="#4b5a52"/><rect x="-30" y="-24" width="60" height="30" rx="3" fill="#4b5a52"/><g fill="#fff8d6"><circle cx="-16" cy="-9" r="7"/><circle cx="0" cy="-9" r="7"/><circle cx="16" cy="-9" r="7"/></g></g>
