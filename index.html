@@ -73,6 +73,8 @@ nav .wrap{display:flex;align-items:center;gap:20px;min-height:60px;flex-wrap:wra
 @media(min-width:701px){.hero .casas{display:none}.hero .casas-d{display:inline}.hero .fabrica{transform:translate(835px,228px)}.hero .humo{transform:translate(-25px,0)}}
 @media(max-width:700px){.hero .ermita{transform:translate(742px,350px) scale(.86)}}
 @media(min-width:1320px){.hero .guia{display:inline}}
+@media(max-width:1319px){.hero .guia{display:inline;transform:translate(1046px,349px) scale(.744)}}
+@media(max-width:700px){.hero .guia{transform:translate(890px,372px) scale(.62)}}
 @media(max-width:700px){.hero .porteria{display:none}}
 @media(max-width:480px){.hero .ermita{transform:translate(804px,362px) scale(.72)}}
 @media(max-width:700px){.hero .casas{transform:translate(0,-40px)}}
@@ -478,6 +480,9 @@ body.vs #hazte-socio,body.vh #capitulos{flex:1 0 auto;width:100%}
 .balon-cta:hover .bc-bola,.balon-cta:focus-visible .bc-bola{transform:rotate(360deg)}
 @media(max-width:700px){.balon-cta{position:relative;right:auto;bottom:auto;margin:0 0 30px;transform:rotate(1deg)}}
 @media(prefers-reduced-motion:reduce){.balon-cta .bc-bola{transition:none}}
+/* móvil: escena corrida a la izquierda para que quepa La Guía, botón de donar más pequeño */
+@media(max-width:700px){.hero .guia{transform:translate(850px,376px) scale(.864)}.hero .casas{transform:translate(-96px,-40px)}.hero .ermita{transform:translate(650px,350px) scale(.86)}.balon-cta{gap:9px;padding:6px 14px 6px 6px}.balon-cta .bc-bola{width:36px;height:36px}.balon-cta .bc-txt b{font-size:19px}.balon-cta .bc-txt small{font-size:11px}.balon-cta .bc-pre{font-size:16px;padding:3px 8px}}
+@media(max-width:480px){.hero .casas{transform:translate(-48px,-46px)}.hero .ermita{transform:translate(704px,362px) scale(.72)}.hero .guia{transform:translate(844px,376px) scale(.864)}}
 /* VISOR DE FOTOS Y RECORTES: al pinchar una foto se abre en grande; pinchando otra vez se ve a tamaño real */
 figure img{cursor:zoom-in}
 .lb{position:fixed;inset:0;z-index:10000;background:rgba(6,14,10,.97);display:flex;flex-direction:column}
